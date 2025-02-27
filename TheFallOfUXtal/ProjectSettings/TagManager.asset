@@ -13,8 +13,8 @@ TagManager:
   - Water
   - UI
   - Player
-  - house
-  - bg
+  - 
+  - 
   - 
   - 
   - 
@@ -41,18 +41,6 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: tiles
-    uniqueID: 4288009701
-    locked: 0
-  - name: objects
-    uniqueID: 4184280703
-    locked: 0
-  - name: people
-    uniqueID: 582761561
-    locked: 0
-  - name: UI
-    uniqueID: 3972311235
     locked: 0
   m_RenderingLayers:
   - Default
