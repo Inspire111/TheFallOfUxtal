@@ -2,15 +2,17 @@ using UnityEngine;
 
 public class TP_Fight : MonoBehaviour
 {
-    [SerializeField] private Vector2[] fightTargetPositions;
     private bool isPlayerInRange = false;
+    public static bool isFightTileActivated = false;
+
+    [SerializeField] private Transform fightArenaPosition;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             isPlayerInRange = true;
-            Debug.Log("Player entered the trigger area.");
+            Debug.Log("Player entered the fight trigger area.");
         }
     }
 
@@ -19,7 +21,7 @@ public class TP_Fight : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isPlayerInRange = false;
-            Debug.Log("Player exited the trigger area.");
+            Debug.Log("Player exited the fight trigger area.");
         }
     }
 
@@ -27,32 +29,18 @@ public class TP_Fight : MonoBehaviour
     {
         if (isPlayerInRange && Input.GetKeyDown(KeyCode.E))
         {
-            Debug.Log("E key pressed, attempting teleport...");
-            TeleportPlayer();
-        }
-    }
+            isFightTileActivated = true;  // Disable WASD movement
 
-    private void TeleportPlayer()
-    {
-        if (fightTargetPositions.Length > 0)
-        {
-            int randomIndex = Random.Range(0, fightTargetPositions.Length);
-            Vector2 selectedTargetPosition = fightTargetPositions[randomIndex];
-
-            GameObject player = GameObject.FindWithTag("Player");
-            if (player != null)
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null && fightArenaPosition != null)
             {
-                Debug.Log("Teleporting player to position: " + selectedTargetPosition);
-                player.transform.position = selectedTargetPosition;
+                player.transform.position = fightArenaPosition.position;
+                Debug.Log("Player teleported to the fight arena.");
             }
             else
             {
-                Debug.LogError("Player GameObject not found!");
+                Debug.LogError("Player or fightArenaPosition not assigned!");
             }
-        }
-        else
-        {
-            Debug.LogError("No teleport target positions assigned!");
         }
     }
 }

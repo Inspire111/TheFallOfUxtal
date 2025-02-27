@@ -3,26 +3,22 @@ using System.Collections.Generic;
 
 public class GridCombatManager : MonoBehaviour
 {
-    public int gridSize = 20; // Size of the diamond grid
+    public int gridSize = 20;
     public float tileSize = 1.5f;
     public GameObject walkableTilePrefab;
     public GameObject obstacleTilePrefab;
     public Transform gridParent;
 
-    public GameObject player;
-    private Vector2Int playerSpawnPosition;
-    public GameObject[,] gridArray;
-    private List<Vector2Int> possibleSpawns = new List<Vector2Int>();
+    private GameObject[,] gridArray;
+    private List<Vector2Int> obstaclePositions = new List<Vector2Int>();
 
-    private bool arenaGenerated = false; // Only generate when player presses "E"
+    private bool arenaGenerated = false;
 
     void Update()
     {
-        // Wait for player to press "E" to generate the arena
         if (!arenaGenerated && Input.GetKeyDown(KeyCode.E))
         {
             GenerateDiamondArena();
-            PlacePlayer();
             arenaGenerated = true;
         }
     }
@@ -32,9 +28,11 @@ public class GridCombatManager : MonoBehaviour
         gridArray = new GameObject[gridSize, gridSize];
         Vector3 gridOrigin = gridParent.position;
 
+        int halfGridSize = gridSize / 2;
+
         for (int y = 0; y < gridSize; y++)
         {
-            int rowWidth = gridSize - Mathf.Abs(y - (gridSize / 2));
+            int rowWidth = gridSize - Mathf.Abs(y - halfGridSize);
             int xOffset = (gridSize - rowWidth) / 2;
 
             for (int x = 0; x < rowWidth; x++)
@@ -49,48 +47,23 @@ public class GridCombatManager : MonoBehaviour
                 GameObject tile = Instantiate(walkableTilePrefab, worldPosition, Quaternion.identity, gridParent);
                 gridArray[x, y] = tile;
 
-                if ((y == 0 && x == 0) || (y == 0 && x == rowWidth - 1) ||
-                    (y == gridSize - 1 && x == 0) || (y == gridSize - 1 && x == rowWidth - 1))
+                if (Random.Range(0, 10) < 3 && !IsBorderTile(tilePosition))
                 {
-                    possibleSpawns.Add(tilePosition);
+                    obstaclePositions.Add(tilePosition);
+                    ReplaceWithObstacleTile(tile, worldPosition);
                 }
             }
         }
-
-        PlaceObstacles();
     }
 
-    void PlaceObstacles()
+    void ReplaceWithObstacleTile(GameObject tile, Vector3 worldPosition)
     {
-        for (int y = 0; y < gridSize; y++)
-        {
-            for (int x = 0; x < gridSize; x++)
-            {
-                Vector2Int position = new Vector2Int(x, y);
-                if (gridArray[x, y] != null || possibleSpawns.Contains(position))
-                    continue;
-
-                Vector3 worldPosition = new Vector3(
-                    gridParent.position.x + (x - gridSize / 2) * tileSize,
-                    gridParent.position.y + (y - gridSize / 2) * tileSize,
-                    0
-                );
-
-                Instantiate(obstacleTilePrefab, worldPosition, Quaternion.identity, gridParent);
-            }
-        }
+        Destroy(tile);
+        Instantiate(obstacleTilePrefab, worldPosition, Quaternion.identity, gridParent);
     }
 
-    void PlacePlayer()
+    bool IsBorderTile(Vector2Int position)
     {
-        playerSpawnPosition = possibleSpawns[Random.Range(0, possibleSpawns.Count)];
-
-        Vector3 playerWorldPos = new Vector3(
-            gridParent.position.x + (playerSpawnPosition.x - gridSize / 2) * tileSize,
-            gridParent.position.y + (playerSpawnPosition.y - gridSize / 2) * tileSize,
-            0
-        );
-
-        player.transform.position = playerWorldPos;
+        return position.x == 0 || position.y == 0 || position.x == gridSize - 1 || position.y == gridSize - 1;
     }
 }
