@@ -1,0 +1,6 @@
+*.dylib filter=lfs diff=lfs merge=lfs -text
+.zip filter=lfs diff=lfs merge=lfs -text
+7b9de7585c1a83807a2cbee08bdada7729d9353a filter=lfs diff=lfs merge=lfs -text
+897a08fec3e04de10cb383d7e2a76aa68287c804 filter=lfs diff=lfs merge=lfs -text
+ed7b9c2f987b0eb692722390496599e36a90fa70 filter=lfs diff=lfs merge=lfs -text
+f077e2d429b39966494fce6b88d998ae4b766300 filter=lfs diff=lfs merge=lfs -text
