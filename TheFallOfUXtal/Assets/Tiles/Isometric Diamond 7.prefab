@@ -238,3 +238,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fightArenaPosition: {fileID: 1923602546785173448, guid: 61429faa5589e1647bf26d15c4f3e672, type: 3}
+  playerspawnTile: {fileID: 8738149596976922899, guid: 63f1ca236b747994daf14c160c8104ab, type: 3}

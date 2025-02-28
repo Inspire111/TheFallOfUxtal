@@ -5,7 +5,7 @@ public class TP_Fight : MonoBehaviour
     private bool isPlayerInRange = false;
     public static bool isFightTileActivated = false;
 
-    [SerializeField] private Transform fightArenaPosition;
+    [SerializeField] private GameObject playerspawnTile;  // Serialized GameObject for player's spawn tile
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -32,15 +32,17 @@ public class TP_Fight : MonoBehaviour
             isFightTileActivated = true;  // Disable WASD movement
 
             GameObject player = GameObject.FindGameObjectWithTag("Player");
-            if (player != null && fightArenaPosition != null)
+            if (player != null)
             {
-                player.transform.position = fightArenaPosition.position;
-                Debug.Log("Player teleported to the fight arena.");
+                // Teleport the player to the fixed position (-100, -100)
+                player.transform.position = new Vector3(-100f, -100f, player.transform.position.z);
+                Debug.Log("Player teleported to position (-100, -100).");
             }
             else
             {
-                Debug.LogError("Player or fightArenaPosition not assigned!");
+                Debug.LogError("Player not assigned!");
             }
         }
     }
 }
+
