@@ -1,12 +1,18 @@
 using UnityEngine;
-using UnityEngine.SceneManagement; // Import Scene Management
+using UnityEngine.SceneManagement;
 
 public class SceneSwitcher : MonoBehaviour
 {
-    public string sceneToLoad = "World"; // The name of the scene to load
-
-    public void LoadScene()
+    public void LoadWorld()
     {
-        SceneManager.LoadScene(sceneToLoad); // Switch to the specified scene
+        SceneManager.LoadScene("World");
+    }
+    public void LoadMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+    public void LoadLobby()
+    {
+        SceneManager.LoadScene("Lobby");
     }
 }
