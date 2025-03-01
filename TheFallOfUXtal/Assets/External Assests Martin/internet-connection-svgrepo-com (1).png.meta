@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      internet-connection-svgrepo-com (1)_0: 5222411953042199663
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
