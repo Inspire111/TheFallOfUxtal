@@ -1,6 +1,6 @@
 using UnityEngine;
-
-public class Player_mvt : MonoBehaviour
+using Unity.Netcode;
+public class Player_mvt : NetworkBehaviour
 {
     public float moveSpeed = 5f;
     private Rigidbody2D rb;
@@ -13,6 +13,14 @@ public class Player_mvt : MonoBehaviour
     private readonly Vector3 left = new Vector3(-1, 0, 0);
     private readonly Vector3 right = new Vector3(1, 0, 0);
 
+    public override void OnNetworkSpawn()
+    {
+        if(!IsOwner)
+        {
+            enabled = false;
+            return;
+        }
+    }
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
