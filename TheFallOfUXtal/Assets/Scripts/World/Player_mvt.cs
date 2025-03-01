@@ -1,26 +1,43 @@
 using UnityEngine;
-
-public class Player_mvt : MonoBehaviour
+using Unity.Netcode;
+public class Player_mvt : NetworkBehaviour
 {
     public float moveSpeed = 5f;
     private Rigidbody2D rb;
-
     private Vector3 moveDirection;
 
     private readonly Vector3 upLeft = new Vector3(-1, 0.5f, 0);
     private readonly Vector3 upRight = new Vector3(1, 0.5f, 0);
     private readonly Vector3 downLeft = new Vector3(-1, -0.5f, 0);
     private readonly Vector3 downRight = new Vector3(1, -0.5f, 0);
-
     private readonly Vector3 left = new Vector3(-1, 0, 0);
     private readonly Vector3 right = new Vector3(1, 0, 0);
 
+    public override void OnNetworkSpawn()
+    {
+        if(!IsOwner)
+        {
+            enabled = false;
+            return;
+        }
+    }
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
+    {
+        if (TP_Fight.isFightTileActivated)
+        {
+            moveDirection = Vector3.zero;
+            return;
+        }
+
+        HandleWASDMovement();
+    }
+
+    void HandleWASDMovement()
     {
         moveDirection = Vector3.zero;
 
@@ -31,19 +48,15 @@ public class Player_mvt : MonoBehaviour
 
         if (w && !a && !d) moveDirection += Vector3.up;
         if (s && !a && !d) moveDirection += Vector3.down;
-
         if (w && a) moveDirection += upLeft;
         if (w && d) moveDirection += upRight;
         if (s && a) moveDirection += downLeft;
         if (s && d) moveDirection += downRight;
-
         if (a && !w && !s) moveDirection += left;
         if (d && !w && !s) moveDirection += right;
 
         if (moveDirection.magnitude > 1)
-        {
             moveDirection.Normalize();
-        }
     }
 
     void FixedUpdate()
