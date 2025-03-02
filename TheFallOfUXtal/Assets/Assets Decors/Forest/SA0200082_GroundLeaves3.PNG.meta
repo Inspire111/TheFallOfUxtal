@@ -1,0 +1,2142 @@
+fileFormatVersion: 2
+guid: e5931fa9d56ba5a4093cf9a4cc1c7d53
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1231926688304231255
+    second: SA0200082_GroundLeaves3_0
+  - first:
+      213: -319307882363100558
+    second: SA0200082_GroundLeaves3_1
+  - first:
+      213: -2214873109727763133
+    second: SA0200082_GroundLeaves3_2
+  - first:
+      213: 8122830042359038241
+    second: SA0200082_GroundLeaves3_3
+  - first:
+      213: -7441246658332732037
+    second: SA0200082_GroundLeaves3_4
+  - first:
+      213: -2954090965841632030
+    second: SA0200082_GroundLeaves3_5
+  - first:
+      213: 7860359628649031752
+    second: SA0200082_GroundLeaves3_6
+  - first:
+      213: 1108927289366781622
+    second: SA0200082_GroundLeaves3_7
+  - first:
+      213: 980587160398379399
+    second: SA0200082_GroundLeaves3_8
+  - first:
+      213: 3842394768029352304
+    second: SA0200082_GroundLeaves3_9
+  - first:
+      213: -7258092497563703407
+    second: SA0200082_GroundLeaves3_10
+  - first:
+      213: 7136147974087495787
+    second: SA0200082_GroundLeaves3_11
+  - first:
+      213: 5705077407104414711
+    second: SA0200082_GroundLeaves3_12
+  - first:
+      213: -6453726290598520453
+    second: SA0200082_GroundLeaves3_13
+  - first:
+      213: 4921198933624042207
+    second: SA0200082_GroundLeaves3_14
+  - first:
+      213: 2697161626967455737
+    second: SA0200082_GroundLeaves3_15
+  - first:
+      213: -1528147398034142288
+    second: SA0200082_GroundLeaves3_16
+  - first:
+      213: -7580295959812865915
+    second: SA0200082_GroundLeaves3_17
+  - first:
+      213: 50385216082788374
+    second: SA0200082_GroundLeaves3_18
+  - first:
+      213: 8644404477479701125
+    second: SA0200082_GroundLeaves3_19
+  - first:
+      213: 2648735461982841123
+    second: SA0200082_GroundLeaves3_20
+  - first:
+      213: 2435303962742601700
+    second: SA0200082_GroundLeaves3_21
+  - first:
+      213: -9169258724074534666
+    second: SA0200082_GroundLeaves3_22
+  - first:
+      213: 4684858344824954351
+    second: SA0200082_GroundLeaves3_23
+  - first:
+      213: 2417483636905696491
+    second: SA0200082_GroundLeaves3_24
+  - first:
+      213: 3556771559993411616
+    second: SA0200082_GroundLeaves3_25
+  - first:
+      213: -4591241118065772147
+    second: SA0200082_GroundLeaves3_26
+  - first:
+      213: 445715661852549109
+    second: SA0200082_GroundLeaves3_27
+  - first:
+      213: -4311542243644699860
+    second: SA0200082_GroundLeaves3_28
+  - first:
+      213: -2688124833094888229
+    second: SA0200082_GroundLeaves3_29
+  - first:
+      213: 5462684912259157355
+    second: SA0200082_GroundLeaves3_30
+  - first:
+      213: -4937147459989830742
+    second: SA0200082_GroundLeaves3_31
+  - first:
+      213: 8175349164818814314
+    second: SA0200082_GroundLeaves3_32
+  - first:
+      213: -764533811754421441
+    second: SA0200082_GroundLeaves3_33
+  - first:
+      213: -1098467392921142758
+    second: SA0200082_GroundLeaves3_34
+  - first:
+      213: -1093430185895574154
+    second: SA0200082_GroundLeaves3_35
+  - first:
+      213: -557907822820948497
+    second: SA0200082_GroundLeaves3_36
+  - first:
+      213: -1831084704408982429
+    second: SA0200082_GroundLeaves3_37
+  - first:
+      213: 1281014364037839172
+    second: SA0200082_GroundLeaves3_38
+  - first:
+      213: -5131889193535278238
+    second: SA0200082_GroundLeaves3_39
+  - first:
+      213: -4193009746185054326
+    second: SA0200082_GroundLeaves3_40
+  - first:
+      213: -2799782670212691323
+    second: SA0200082_GroundLeaves3_41
+  - first:
+      213: 3870721722273953391
+    second: SA0200082_GroundLeaves3_42
+  - first:
+      213: 6500371859228985021
+    second: SA0200082_GroundLeaves3_43
+  - first:
+      213: 1264554684819886663
+    second: SA0200082_GroundLeaves3_44
+  - first:
+      213: -4923046065321816710
+    second: SA0200082_GroundLeaves3_45
+  - first:
+      213: 1160202665295781903
+    second: SA0200082_GroundLeaves3_46
+  - first:
+      213: -3675539821079687325
+    second: SA0200082_GroundLeaves3_47
+  - first:
+      213: -7021637095205745702
+    second: SA0200082_GroundLeaves3_48
+  - first:
+      213: 1862137506441933702
+    second: SA0200082_GroundLeaves3_49
+  - first:
+      213: -5245717852541713804
+    second: SA0200082_GroundLeaves3_50
+  - first:
+      213: -2176081553107549708
+    second: SA0200082_GroundLeaves3_51
+  - first:
+      213: 936356823215568041
+    second: SA0200082_GroundLeaves3_52
+  - first:
+      213: 7414634649762549947
+    second: SA0200082_GroundLeaves3_53
+  - first:
+      213: 1608349357613028161
+    second: SA0200082_GroundLeaves3_54
+  - first:
+      213: -4973529090399927792
+    second: SA0200082_GroundLeaves3_55
+  - first:
+      213: 3689827855354614040
+    second: SA0200082_GroundLeaves3_56
+  - first:
+      213: 8927720829881160760
+    second: SA0200082_GroundLeaves3_57
+  - first:
+      213: -8114686534518911431
+    second: SA0200082_GroundLeaves3_58
+  - first:
+      213: -3935444623486002222
+    second: SA0200082_GroundLeaves3_59
+  - first:
+      213: -7907122488460466825
+    second: SA0200082_GroundLeaves3_60
+  - first:
+      213: -5822258257131729490
+    second: SA0200082_GroundLeaves3_61
+  - first:
+      213: 1197961226719599632
+    second: SA0200082_GroundLeaves3_62
+  - first:
+      213: -1277896725758113271
+    second: SA0200082_GroundLeaves3_63
+  - first:
+      213: -286664883660617508
+    second: SA0200082_GroundLeaves3_64
+  - first:
+      213: -2029453790367123694
+    second: SA0200082_GroundLeaves3_65
+  - first:
+      213: -4642501915534966882
+    second: SA0200082_GroundLeaves3_66
+  - first:
+      213: -3157423819270880405
+    second: SA0200082_GroundLeaves3_67
+  - first:
+      213: 9177992422513683174
+    second: SA0200082_GroundLeaves3_68
+  - first:
+      213: 2473153518415678303
+    second: SA0200082_GroundLeaves3_69
+  - first:
+      213: -4753879982801574058
+    second: SA0200082_GroundLeaves3_70
+  - first:
+      213: 7720502810656499440
+    second: SA0200082_GroundLeaves3_71
+  - first:
+      213: 8287862411435681326
+    second: SA0200082_GroundLeaves3_72
+  - first:
+      213: 5239126562040769877
+    second: SA0200082_GroundLeaves3_73
+  - first:
+      213: 5650852766446123851
+    second: SA0200082_GroundLeaves3_74
+  - first:
+      213: -3208270370802257175
+    second: SA0200082_GroundLeaves3_75
+  - first:
+      213: 5280988019911677791
+    second: SA0200082_GroundLeaves3_76
+  - first:
+      213: 70536355744040747
+    second: SA0200082_GroundLeaves3_77
+  - first:
+      213: -7819196275458604235
+    second: SA0200082_GroundLeaves3_78
+  - first:
+      213: -8416492047732260684
+    second: SA0200082_GroundLeaves3_79
+  - first:
+      213: 6640768566251767727
+    second: SA0200082_GroundLeaves3_80
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_0
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 260
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75372b5cbcea81110800000000000000
+      internalID: 1231926688304231255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_1
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 257
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 272e3c93c27919bf0800000000000000
+      internalID: -319307882363100558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_2
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 252
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 345ac1044a03341e0800000000000000
+      internalID: -2214873109727763133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_3
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 263
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1218ead03e61ab070800000000000000
+      internalID: 8122830042359038241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_4
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 248
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b75d304f6916bb890800000000000000
+      internalID: -7441246658332732037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_5
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 241
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e4a1d20be5f007d0800000000000000
+      internalID: -2954090965841632030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_6
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 224
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8486270bf6b951d60800000000000000
+      internalID: 7860359628649031752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_7
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 220
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6be917c8e73b36f00800000000000000
+      internalID: 1108927289366781622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_8
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 230
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 789bad6b3debb9d00800000000000000
+      internalID: 980587160398379399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_9
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 234
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07185330fade25530800000000000000
+      internalID: 3842394768029352304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_10
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 227
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 197a9c71453164b90800000000000000
+      internalID: -7258092497563703407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_11
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 228
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b60db1406c0b80360800000000000000
+      internalID: 7136147974087495787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_12
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 228
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f3b09acca18c2f40800000000000000
+      internalID: 5705077407104414711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_13
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 211
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b79964bc122cf66a0800000000000000
+      internalID: -6453726290598520453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_14
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 199
+        width: 33
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd231b34b5c9b4440800000000000000
+      internalID: 4921198933624042207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_15
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 213
+        width: 25
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f7b535a53e3e6520800000000000000
+      internalID: 2697161626967455737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_16
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 203
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bbccb7b90eeacae0800000000000000
+      internalID: -1528147398034142288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_17
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 212
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58086079cf06dc690800000000000000
+      internalID: -7580295959812865915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_18
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 191
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 610cb8a461103b000800000000000000
+      internalID: 50385216082788374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_19
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 192
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58a49fe721817f770800000000000000
+      internalID: 8644404477479701125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_20
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 195
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 329a77b7ed232c420800000000000000
+      internalID: 2648735461982841123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_21
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 200
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e7bf532d00fbc120800000000000000
+      internalID: 2435303962742601700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_22
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 185
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f8c2e175cf30c080800000000000000
+      internalID: -9169258724074534666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_23
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 181
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fedd05ad7d5f30140800000000000000
+      internalID: 4684858344824954351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_24
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 173
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bec55143f80ac8120800000000000000
+      internalID: 2417483636905696491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_25
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 124
+        width: 80
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0288e94a3e03c5130800000000000000
+      internalID: 3556771559993411616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_26
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 165
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d89b58f4782a840c0800000000000000
+      internalID: -4591241118065772147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_27
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 160
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ff9c8f68008f2600800000000000000
+      internalID: 445715661852549109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_28
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 163
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2b87754c235a24c0800000000000000
+      internalID: -4311542243644699860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_29
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 162
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd41973e4bcd1bad0800000000000000
+      internalID: -2688124833094888229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 132
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6dc7133cfa5fcb40800000000000000
+      internalID: 5462684912259157355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_31
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 139
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa385931b8abb7bb0800000000000000
+      internalID: -4937147459989830742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_32
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 129
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a65dfc320cca47170800000000000000
+      internalID: 8175349164818814314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_33
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 142
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f333a938c84d365f0800000000000000
+      internalID: -764533811754421441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_34
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 118
+        width: 25
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1af59fd9b571c0f0800000000000000
+      internalID: -1098467392921142758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_35
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 120
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67541070a0b53d0f0800000000000000
+      internalID: -1093430185895574154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_36
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 109
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe588538ac9e148f0800000000000000
+      internalID: -557907822820948497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_37
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 123
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36c2d00b92ea696e0800000000000000
+      internalID: -1831084704408982429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_38
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 108
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 449f5a8e6c317c110800000000000000
+      internalID: 1281014364037839172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_39
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 121
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 263f9a8e7fdd7c8b0800000000000000
+      internalID: -5131889193535278238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_40
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 102
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8793e2f9df6fc5c0800000000000000
+      internalID: -4193009746185054326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_41
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 118
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58a8dadce7c2529d0800000000000000
+      internalID: -2799782670212691323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_42
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 117
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f66f68006e097b530800000000000000
+      internalID: 3870721722273953391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_43
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 88
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db60a49f3c5f53a50800000000000000
+      internalID: 6500371859228985021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_44
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 75
+        width: 28
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 742deb339c99c8110800000000000000
+      internalID: 1264554684819886663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_45
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 96
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7dcb9fdfa3ddabb0800000000000000
+      internalID: -4923046065321816710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_46
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 39
+        width: 90
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f00aa645d2ed91010800000000000000
+      internalID: 1160202665295781903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_47
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 100
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36f0ebea10cddfcc0800000000000000
+      internalID: -3675539821079687325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_48
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 90
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adb4e8e93422e8e90800000000000000
+      internalID: -7021637095205745702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_49
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 89
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68337623234a7d910800000000000000
+      internalID: 1862137506441933702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_50
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 90
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4728357f7677337b0800000000000000
+      internalID: -5245717852541713804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_51
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 86
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f18eb85b510dc1e0800000000000000
+      internalID: -2176081553107549708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_52
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 85
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a4f6c6d19b9efc00800000000000000
+      internalID: 936356823215568041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_53
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 85
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb05666fde216e660800000000000000
+      internalID: 7414634649762549947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_54
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 79
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14390472831025610800000000000000
+      internalID: 1608349357613028161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_55
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 72
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01204a6a4a97afab0800000000000000
+      internalID: -4973529090399927792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_56
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 68
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 811d0c882e6e43330800000000000000
+      internalID: 3689827855354614040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_57
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 70
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8341cee2bc2a5eb70800000000000000
+      internalID: 8927720829881160760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_58
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 42
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93eca5e1797d26f80800000000000000
+      internalID: -8114686534518911431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_59
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 63
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2db55ef37fd7269c0800000000000000
+      internalID: -3935444623486002222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_60
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 69
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 775afcf8df1444290800000000000000
+      internalID: -7907122488460466825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_61
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 47
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ead041976fe233fa0800000000000000
+      internalID: -5822258257131729490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_62
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 24
+        width: 39
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01c105d736300a010800000000000000
+      internalID: 1197961226719599632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_63
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 52
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90a8d81d2bff34ee0800000000000000
+      internalID: -1277896725758113271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_64
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 24
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd884df9ecf850cf0800000000000000
+      internalID: -286664883660617508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_65
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 48
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 217f819b78ee5d3e0800000000000000
+      internalID: -2029453790367123694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_66
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 42
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9fb777da15829fb0800000000000000
+      internalID: -4642501915534966882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_67
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 38
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b63800fd3c39e24d0800000000000000
+      internalID: -3157423819270880405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_68
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 25
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eaa72f2b77ce5f70800000000000000
+      internalID: 9177992422513683174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_69
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 32
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5b8c2c8508625220800000000000000
+      internalID: 2473153518415678303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_70
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 27
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 657a540c753d60eb0800000000000000
+      internalID: -4753879982801574058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_71
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 38
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f6e59cb66cb42b60800000000000000
+      internalID: 7720502810656499440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_72
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 32
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e26afe4c3f6640370800000000000000
+      internalID: 8287862411435681326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_73
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 28
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55de0cf99dd15b840800000000000000
+      internalID: 5239126562040769877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_74
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 28
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4bfd0ec6acdb6e40800000000000000
+      internalID: 5650852766446123851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_75
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 6
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e2bbec881fe973d0800000000000000
+      internalID: -3208270370802257175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_76
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 8
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f57ddedcf96d94940800000000000000
+      internalID: 5280988019911677791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_77
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 8
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b27cfdb11789af000800000000000000
+      internalID: 70536355744040747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_78
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 15
+        width: 40
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5338b345a62ac7390800000000000000
+      internalID: -7819196275458604235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_79
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 1
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b0c408331d923b80800000000000000
+      internalID: -8416492047732260684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200082_GroundLeaves3_80
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 0
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa74403a3dfb82c50800000000000000
+      internalID: 6640768566251767727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
