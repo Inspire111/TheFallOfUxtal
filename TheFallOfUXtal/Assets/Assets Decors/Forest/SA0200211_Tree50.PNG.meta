@@ -141,6 +141,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +522,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SA0200211_Tree50_0: 204294764876575050
+      SA0200211_Tree50_1: -597041132864841113
+      SA0200211_Tree50_10: 546970446176758215
+      SA0200211_Tree50_11: -7378091487863650197
+      SA0200211_Tree50_12: 9080725768611264661
+      SA0200211_Tree50_13: 5526174908769529684
+      SA0200211_Tree50_14: -5616170500364195410
+      SA0200211_Tree50_15: -654683845747636187
+      SA0200211_Tree50_2: -3065161420219282091
+      SA0200211_Tree50_3: 3452536204693482595
+      SA0200211_Tree50_4: -94243919061717924
+      SA0200211_Tree50_5: -3325055466301713784
+      SA0200211_Tree50_6: -1716092753835927
+      SA0200211_Tree50_7: 375987038311574767
+      SA0200211_Tree50_8: 4348561212035556378
+      SA0200211_Tree50_9: 4699689083327775287
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

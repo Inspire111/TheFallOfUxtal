@@ -111,6 +111,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -259,7 +272,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SA0200017_DarkGrass16_0: 4879237099617961939
+      SA0200017_DarkGrass16_1: -7188089713725864447
+      SA0200017_DarkGrass16_2: 7046150821265172426
+      SA0200017_DarkGrass16_3: -593225279537361862
+      SA0200017_DarkGrass16_4: -6165576153360896253
+      SA0200017_DarkGrass16_5: 1634395411032025988
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

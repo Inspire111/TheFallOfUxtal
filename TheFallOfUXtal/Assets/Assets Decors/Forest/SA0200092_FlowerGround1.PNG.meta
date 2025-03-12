@@ -177,6 +177,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -809,7 +822,35 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SA0200092_FlowerGround1_0: 8643078352259230891
+      SA0200092_FlowerGround1_1: -6937474789843434365
+      SA0200092_FlowerGround1_10: -4523018638034903773
+      SA0200092_FlowerGround1_11: 1355615271852927337
+      SA0200092_FlowerGround1_12: -703162486412064128
+      SA0200092_FlowerGround1_13: 5872950366208730948
+      SA0200092_FlowerGround1_14: 3863250930616470946
+      SA0200092_FlowerGround1_15: -3245195242969728972
+      SA0200092_FlowerGround1_16: 3372022233233912283
+      SA0200092_FlowerGround1_17: 2408463212533082770
+      SA0200092_FlowerGround1_18: 6326858706645828735
+      SA0200092_FlowerGround1_19: -4424980747941460301
+      SA0200092_FlowerGround1_2: 7656222582787769620
+      SA0200092_FlowerGround1_20: -3833278029479848909
+      SA0200092_FlowerGround1_21: 5548255115506640996
+      SA0200092_FlowerGround1_22: -8364525738995325410
+      SA0200092_FlowerGround1_23: 4811530312200182988
+      SA0200092_FlowerGround1_24: 3862265351045322923
+      SA0200092_FlowerGround1_25: -5030679196964469917
+      SA0200092_FlowerGround1_26: -3605053554914522154
+      SA0200092_FlowerGround1_27: -6536181025002547646
+      SA0200092_FlowerGround1_3: -2571321332368572092
+      SA0200092_FlowerGround1_4: -6851977068652291804
+      SA0200092_FlowerGround1_5: -3875919266540117249
+      SA0200092_FlowerGround1_6: 2983786873787564055
+      SA0200092_FlowerGround1_7: -2658842391114300457
+      SA0200092_FlowerGround1_8: -4079229230550907570
+      SA0200092_FlowerGround1_9: -3559848029182878191
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

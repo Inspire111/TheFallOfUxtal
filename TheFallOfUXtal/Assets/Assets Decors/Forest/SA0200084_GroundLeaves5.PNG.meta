@@ -138,6 +138,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -484,7 +497,22 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SA0200084_GroundLeaves5_0: -1831085891532295428
+      SA0200084_GroundLeaves5_1: -6298026540921804221
+      SA0200084_GroundLeaves5_10: -8664659678902580169
+      SA0200084_GroundLeaves5_11: -2282144174918103446
+      SA0200084_GroundLeaves5_12: 2930373495215424116
+      SA0200084_GroundLeaves5_13: -1300512544989069715
+      SA0200084_GroundLeaves5_14: 2938577725842803247
+      SA0200084_GroundLeaves5_2: -4771266412543553965
+      SA0200084_GroundLeaves5_3: -4709318068523507623
+      SA0200084_GroundLeaves5_4: 5418507495838876921
+      SA0200084_GroundLeaves5_5: -5204848752279721199
+      SA0200084_GroundLeaves5_6: 8225281451423749267
+      SA0200084_GroundLeaves5_7: -142292008680242210
+      SA0200084_GroundLeaves5_8: -7498558192399816297
+      SA0200084_GroundLeaves5_9: -4497110352878456936
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

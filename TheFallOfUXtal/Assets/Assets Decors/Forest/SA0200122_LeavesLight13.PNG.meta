@@ -114,6 +114,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -284,7 +297,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SA0200122_LeavesLight13_0: 3480022833914769874
+      SA0200122_LeavesLight13_1: -4662716843072567439
+      SA0200122_LeavesLight13_2: 1392223885185936004
+      SA0200122_LeavesLight13_3: 4201103835964318425
+      SA0200122_LeavesLight13_4: -7065030087207216182
+      SA0200122_LeavesLight13_5: 8892812755215057363
+      SA0200122_LeavesLight13_6: -1115514735921252417
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

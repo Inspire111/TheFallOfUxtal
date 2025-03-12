@@ -132,6 +132,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -434,7 +447,20 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SA0200088_Mushroom3_0: -8800803038746159672
+      SA0200088_Mushroom3_1: -8144105105889220457
+      SA0200088_Mushroom3_10: -6048162360306018043
+      SA0200088_Mushroom3_11: 5215378400185754794
+      SA0200088_Mushroom3_12: 2037694086439579764
+      SA0200088_Mushroom3_2: -7986171190354400184
+      SA0200088_Mushroom3_3: 7712350141009927933
+      SA0200088_Mushroom3_4: -4494281193136013104
+      SA0200088_Mushroom3_5: -8137493677002962620
+      SA0200088_Mushroom3_6: -2948885999558922230
+      SA0200088_Mushroom3_7: -7916277676431662908
+      SA0200088_Mushroom3_8: 4562200209513824237
+      SA0200088_Mushroom3_9: 4904246254672242281
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

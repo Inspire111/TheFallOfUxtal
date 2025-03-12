@@ -192,6 +192,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -934,7 +947,40 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SA0200083_GroundLeaves4_0: -5127100084026255177
+      SA0200083_GroundLeaves4_1: 1572322097112021224
+      SA0200083_GroundLeaves4_10: 6502280970200288357
+      SA0200083_GroundLeaves4_11: -6748042941475117739
+      SA0200083_GroundLeaves4_12: -5183677622915535149
+      SA0200083_GroundLeaves4_13: 174818366608996616
+      SA0200083_GroundLeaves4_14: 384939923532979268
+      SA0200083_GroundLeaves4_15: 1005860456469994221
+      SA0200083_GroundLeaves4_16: -8196123184983962178
+      SA0200083_GroundLeaves4_17: 3540006489334566667
+      SA0200083_GroundLeaves4_18: -544729791750734096
+      SA0200083_GroundLeaves4_19: 4095199234573959538
+      SA0200083_GroundLeaves4_2: -9112649253680741965
+      SA0200083_GroundLeaves4_20: 169791470966386068
+      SA0200083_GroundLeaves4_21: -126959456636656620
+      SA0200083_GroundLeaves4_22: -2346546515864510592
+      SA0200083_GroundLeaves4_23: 4058146786583537807
+      SA0200083_GroundLeaves4_24: -8049207131254800858
+      SA0200083_GroundLeaves4_25: 1058626401824261011
+      SA0200083_GroundLeaves4_26: -9068240101682473216
+      SA0200083_GroundLeaves4_27: -3821605150155749471
+      SA0200083_GroundLeaves4_28: 530281869240304696
+      SA0200083_GroundLeaves4_29: 501967600734213537
+      SA0200083_GroundLeaves4_3: -8649099598132069741
+      SA0200083_GroundLeaves4_30: -4239005157822519023
+      SA0200083_GroundLeaves4_31: 3914928791570417872
+      SA0200083_GroundLeaves4_32: -1378041728950550066
+      SA0200083_GroundLeaves4_4: -5208975761051937434
+      SA0200083_GroundLeaves4_5: -8760464843414611559
+      SA0200083_GroundLeaves4_6: -3668642099658274306
+      SA0200083_GroundLeaves4_7: -3574213714918190360
+      SA0200083_GroundLeaves4_8: 6611623745109806325
+      SA0200083_GroundLeaves4_9: -3558164125306566028
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

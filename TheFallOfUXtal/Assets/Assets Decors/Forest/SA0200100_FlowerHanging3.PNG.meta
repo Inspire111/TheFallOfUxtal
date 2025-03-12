@@ -126,6 +126,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -384,7 +397,18 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SA0200100_FlowerHanging3_0: -5631595399271273611
+      SA0200100_FlowerHanging3_1: 8667054826236222802
+      SA0200100_FlowerHanging3_10: 7268102946542110511
+      SA0200100_FlowerHanging3_2: 2537563713231158553
+      SA0200100_FlowerHanging3_3: 7816324411325938655
+      SA0200100_FlowerHanging3_4: 3409671470450079543
+      SA0200100_FlowerHanging3_5: -1134439882497798030
+      SA0200100_FlowerHanging3_6: -2830835798285528336
+      SA0200100_FlowerHanging3_7: -7155958767974021895
+      SA0200100_FlowerHanging3_8: -7157290371841383901
+      SA0200100_FlowerHanging3_9: 4050770155596717008
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

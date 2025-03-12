@@ -15,7 +15,7 @@ public class Player_mvt : NetworkBehaviour
 
     public override void OnNetworkSpawn()
     {
-        if(!IsOwner)
+        if (!IsOwner)
         {
             enabled = false;
             return;

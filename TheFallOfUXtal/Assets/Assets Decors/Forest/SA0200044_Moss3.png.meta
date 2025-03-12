@@ -141,6 +141,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +522,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SA0200044_Moss3_0: 6813492141051879109
+      SA0200044_Moss3_1: -5285467722165879657
+      SA0200044_Moss3_10: -4073241592234825459
+      SA0200044_Moss3_11: -777108261110323220
+      SA0200044_Moss3_12: -8176494349863246515
+      SA0200044_Moss3_13: 4150615213028861116
+      SA0200044_Moss3_14: -1260542453275007055
+      SA0200044_Moss3_15: -300865600774697857
+      SA0200044_Moss3_2: 3133667887485751972
+      SA0200044_Moss3_3: 3767877724580076074
+      SA0200044_Moss3_4: 4162392908500955083
+      SA0200044_Moss3_5: 590078511526226357
+      SA0200044_Moss3_6: 8337284602198686043
+      SA0200044_Moss3_7: -5767677668166953997
+      SA0200044_Moss3_8: 8002359352328098558
+      SA0200044_Moss3_9: -1712421957918753379
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

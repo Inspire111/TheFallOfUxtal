@@ -135,6 +135,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -459,7 +472,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SA0200093_FlowerGround2_0: -2111761515402673166
+      SA0200093_FlowerGround2_1: 1325589296808778903
+      SA0200093_FlowerGround2_10: 4907611167858881050
+      SA0200093_FlowerGround2_11: 3143752198940674377
+      SA0200093_FlowerGround2_12: -8148345241124543240
+      SA0200093_FlowerGround2_13: -1169352233268755905
+      SA0200093_FlowerGround2_2: -2020259540256957161
+      SA0200093_FlowerGround2_3: 3509119300974837910
+      SA0200093_FlowerGround2_4: -7426003774291378788
+      SA0200093_FlowerGround2_5: -2859739357605226710
+      SA0200093_FlowerGround2_6: -2328704180212813028
+      SA0200093_FlowerGround2_7: -6016837948469331018
+      SA0200093_FlowerGround2_8: -8290882959785566925
+      SA0200093_FlowerGround2_9: -1801484976662700292
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

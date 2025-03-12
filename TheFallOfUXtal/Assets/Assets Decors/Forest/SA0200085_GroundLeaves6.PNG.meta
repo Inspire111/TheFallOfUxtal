@@ -213,6 +213,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1109,7 +1122,47 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SA0200085_GroundLeaves6_0: 3652925204908563968
+      SA0200085_GroundLeaves6_1: -1456132354822157593
+      SA0200085_GroundLeaves6_10: -1661809165173713195
+      SA0200085_GroundLeaves6_11: 5502413685998220680
+      SA0200085_GroundLeaves6_12: 1317148976879665727
+      SA0200085_GroundLeaves6_13: 3300077039356778694
+      SA0200085_GroundLeaves6_14: -5696436182824449207
+      SA0200085_GroundLeaves6_15: 1489561806266700801
+      SA0200085_GroundLeaves6_16: 1161334592468650875
+      SA0200085_GroundLeaves6_17: -5172442712815519848
+      SA0200085_GroundLeaves6_18: 2676996470624254814
+      SA0200085_GroundLeaves6_19: -1620225088781757124
+      SA0200085_GroundLeaves6_2: -4242497281976697182
+      SA0200085_GroundLeaves6_20: 61645028719342263
+      SA0200085_GroundLeaves6_21: 6835713236118919212
+      SA0200085_GroundLeaves6_22: 4229914862231653838
+      SA0200085_GroundLeaves6_23: 2596690207100534359
+      SA0200085_GroundLeaves6_24: -645261454751400508
+      SA0200085_GroundLeaves6_25: 7982478404688494330
+      SA0200085_GroundLeaves6_26: -2822303609133959664
+      SA0200085_GroundLeaves6_27: 8830042131391522365
+      SA0200085_GroundLeaves6_28: 404556586793303036
+      SA0200085_GroundLeaves6_29: -7406639404830654027
+      SA0200085_GroundLeaves6_3: 1096790014943672862
+      SA0200085_GroundLeaves6_30: 2428547056609217983
+      SA0200085_GroundLeaves6_31: 1403418611635396418
+      SA0200085_GroundLeaves6_32: -3468578145823702336
+      SA0200085_GroundLeaves6_33: 8363343526084763285
+      SA0200085_GroundLeaves6_34: -5193458966790615331
+      SA0200085_GroundLeaves6_35: 6522878243664856395
+      SA0200085_GroundLeaves6_36: -6347756711035591971
+      SA0200085_GroundLeaves6_37: -4286213108733104899
+      SA0200085_GroundLeaves6_38: 2901166084564851657
+      SA0200085_GroundLeaves6_39: -5841383761363345688
+      SA0200085_GroundLeaves6_4: -2899056134045780478
+      SA0200085_GroundLeaves6_5: 4900361819642066780
+      SA0200085_GroundLeaves6_6: 8747963133819249688
+      SA0200085_GroundLeaves6_7: 7212749566143664432
+      SA0200085_GroundLeaves6_8: 4158316187402852640
+      SA0200085_GroundLeaves6_9: 4723965569217192556
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
