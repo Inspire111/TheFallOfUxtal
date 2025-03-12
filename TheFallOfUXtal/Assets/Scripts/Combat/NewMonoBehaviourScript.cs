@@ -14,37 +14,33 @@ public class GridCombatManager : MonoBehaviour
     public int numberOfObstacles = 5;
     public Transform gridParent;
 
-    public static Vector3 playerSpawnPosition = Vector3.zero; // Static player spawn position
-    public static bool arenaReady = false;  // Static flag to check if arena is generated
+    public static Vector3 playerSpawnPosition = Vector3.zero;
+    public static bool arenaReady = false;
 
-    private List<Vector3> walkablePositions = new List<Vector3>();  // All walkable tiles
-    private List<Vector3> enemyPositions = new List<Vector3>();    // Enemies' positions
+    private List<Vector3> walkablePositions = new List<Vector3>();
+    private List<Vector3> enemyPositions = new List<Vector3>();
 
     private bool arenaGenerated = false;
 
-    // Offset value for enemy height (same as the player)
     [SerializeField] private float heightOffset = 0.5f;
-
-    // Reference to the Enemy GameObject (to spawn)
     public GameObject enemyPrefab;
 
-    public TurnManager turnManager;  // Reference to the TurnManager to notify when the player is in the arena
+    public TurnManager turnManager;
 
-    void Update()
+    public void GenerateArena()
     {
-        // Press E to generate arena
-        if (!arenaGenerated && Input.GetKeyDown(KeyCode.E))
-        {
-            GenerateDiamondArena();
-            arenaGenerated = true;
-            arenaReady = true;  // Mark arena as ready
-            Debug.Log("Arena generated and ready!");
+        if (arenaGenerated) return;
 
-            // Notify the TurnManager that the player is now in the arena
-            if (turnManager != null)
-            {
-                turnManager.SetPlayerInArena(true);
-            }
+        GenerateDiamondArena();
+        arenaGenerated = true;
+        arenaReady = true;
+
+        Debug.Log("Arena generated and ready!");
+
+        // Notify TurnManager
+        if (turnManager != null)
+        {
+            turnManager.SetPlayerInArena(true);
         }
     }
 
@@ -77,16 +73,12 @@ public class GridCombatManager : MonoBehaviour
         }
 
         walkablePositions.AddRange(availablePositions);
-
-        // Set and spawn player at top-center
         playerSpawnPosition = topCenterPosition;
+
         Instantiate(playerSpawnTilePrefab, playerSpawnPosition, Quaternion.identity, gridParent);
         availablePositions.Remove(playerSpawnPosition);
 
-        // Place enemies in enemy spawn positions (where enemySpawnTilePrefab is placed)
         PlaceEnemies(availablePositions);
-
-        // Place obstacles
         PlaceObstacles(availablePositions);
     }
 
@@ -97,29 +89,20 @@ public class GridCombatManager : MonoBehaviour
             int randomIndex = Random.Range(availablePositions.Count / 2, availablePositions.Count);
             Vector3 enemyPos = availablePositions[randomIndex];
 
-            // Spawn the enemy spawn tile
             Instantiate(enemySpawnTilePrefab, enemyPos, Quaternion.identity, gridParent);
-
-            // Directly spawn enemies at each enemy spawn tile with offset
             SpawnEnemyAtTile(enemyPos);
-
-            // Store enemy position for reference (if needed for other logic)
             enemyPositions.Add(enemyPos);
 
             availablePositions.RemoveAt(randomIndex);
         }
     }
 
-    // Method to spawn an enemy at a given tile position with offset
     void SpawnEnemyAtTile(Vector3 position)
     {
-        // Apply the same height offset used for the player spawn
         Vector3 spawnPositionWithOffset = position + new Vector3(0, heightOffset, 0);
 
-        // Check if the enemyPrefab is assigned
         if (enemyPrefab != null)
         {
-            // Instantiate the enemy at the spawn position with offset
             Instantiate(enemyPrefab, spawnPositionWithOffset, Quaternion.identity, gridParent);
             Debug.Log($"Enemy spawned at: {spawnPositionWithOffset}");
         }

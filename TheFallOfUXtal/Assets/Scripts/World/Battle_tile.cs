@@ -1,13 +1,18 @@
 ﻿using UnityEngine;
 
-
 public class TP_Fight : MonoBehaviour
 {
     private bool isPlayerInRange = false;
     public static bool isFightTileActivated = false;
 
-    // Offset value to place player slightly above the tile
     [SerializeField] private float heightOffset = 0.5f;
+
+    private GridCombatManager gridCombatManager;
+
+    private void Start()
+    {
+        gridCombatManager = FindObjectOfType<GridCombatManager>(); // Find reference in scene
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -33,8 +38,7 @@ public class TP_Fight : MonoBehaviour
         {
             if (!GridCombatManager.arenaReady)
             {
-                Debug.LogWarning("Arena is not ready yet! Please generate the arena first.");
-                return;
+                gridCombatManager.GenerateArena(); // ✅ Generate arena when pressing E on FightTile
             }
 
             isFightTileActivated = true;
