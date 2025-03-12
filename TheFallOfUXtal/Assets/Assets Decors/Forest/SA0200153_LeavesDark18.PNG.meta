@@ -1,0 +1,702 @@
+fileFormatVersion: 2
+guid: 2dfb008da2e68cc468fb1d40f53dc8fa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8834840800978450756
+    second: SA0200153_LeavesDark18_0
+  - first:
+      213: -7056855859237733870
+    second: SA0200153_LeavesDark18_1
+  - first:
+      213: 1396413052742174450
+    second: SA0200153_LeavesDark18_2
+  - first:
+      213: -8020136259769237543
+    second: SA0200153_LeavesDark18_3
+  - first:
+      213: 5119136105267483803
+    second: SA0200153_LeavesDark18_4
+  - first:
+      213: 1067115851211260211
+    second: SA0200153_LeavesDark18_5
+  - first:
+      213: 10696970272180304
+    second: SA0200153_LeavesDark18_6
+  - first:
+      213: 3226564545355806371
+    second: SA0200153_LeavesDark18_7
+  - first:
+      213: -4862587720875590040
+    second: SA0200153_LeavesDark18_8
+  - first:
+      213: -6697709161527379175
+    second: SA0200153_LeavesDark18_9
+  - first:
+      213: 7610117689940208549
+    second: SA0200153_LeavesDark18_10
+  - first:
+      213: 6559509098853671882
+    second: SA0200153_LeavesDark18_11
+  - first:
+      213: -5123309267815235844
+    second: SA0200153_LeavesDark18_12
+  - first:
+      213: -6123773621653329158
+    second: SA0200153_LeavesDark18_13
+  - first:
+      213: 7746595564514127612
+    second: SA0200153_LeavesDark18_14
+  - first:
+      213: -8860027268729899025
+    second: SA0200153_LeavesDark18_15
+  - first:
+      213: 4515711467563926739
+    second: SA0200153_LeavesDark18_16
+  - first:
+      213: 2223968935854876830
+    second: SA0200153_LeavesDark18_17
+  - first:
+      213: -2063216857898372576
+    second: SA0200153_LeavesDark18_18
+  - first:
+      213: 5085328861633160836
+    second: SA0200153_LeavesDark18_19
+  - first:
+      213: -5792055354411142660
+    second: SA0200153_LeavesDark18_20
+  - first:
+      213: 2451458514591261035
+    second: SA0200153_LeavesDark18_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SA0200153_LeavesDark18_0
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 275
+        width: 41
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb64d8ab917546580800000000000000
+      internalID: -8834840800978450756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200153_LeavesDark18_1
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 303
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21a300f1cf2011e90800000000000000
+      internalID: -7056855859237733870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200153_LeavesDark18_2
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 284
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f68a60e54e016310800000000000000
+      internalID: 1396413052742174450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200153_LeavesDark18_3
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 77
+        width: 241
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9df79327090c2b090800000000000000
+      internalID: -8020136259769237543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200153_LeavesDark18_4
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 201
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9458575a23da0740800000000000000
+      internalID: 5119136105267483803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200153_LeavesDark18_5
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 78
+        width: 212
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 331c2ad76382fce00800000000000000
+      internalID: 1067115851211260211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200153_LeavesDark18_6
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 155
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0580f3976d0062000800000000000000
+      internalID: 10696970272180304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200153_LeavesDark18_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 41
+        width: 135
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a67dc2eb5f07cc20800000000000000
+      internalID: 3226564545355806371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200153_LeavesDark18_8
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 129
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86eb8002b3e948cb0800000000000000
+      internalID: -4862587720875590040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200153_LeavesDark18_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 58
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91bf74ae005fc03a0800000000000000
+      internalID: -6697709161527379175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200153_LeavesDark18_10
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 76
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ab6dc708b19c9960800000000000000
+      internalID: 7610117689940208549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200153_LeavesDark18_11
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 64
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac3ad1a85ce080b50800000000000000
+      internalID: 6559509098853671882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200153_LeavesDark18_12
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 57
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfef7698d5956e8b0800000000000000
+      internalID: -5123309267815235844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200153_LeavesDark18_13
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 58
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afa2274165cf30ba0800000000000000
+      internalID: -6123773621653329158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200153_LeavesDark18_14
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 38
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfe2b796f9f618b60800000000000000
+      internalID: 7746595564514127612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200153_LeavesDark18_15
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 45
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe7741b342cda0580800000000000000
+      internalID: -8860027268729899025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200153_LeavesDark18_16
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 53
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d44e4c87a70bae30800000000000000
+      internalID: 4515711467563926739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200153_LeavesDark18_17
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 19
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e98222dc6ff1dde10800000000000000
+      internalID: 2223968935854876830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200153_LeavesDark18_18
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 19
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 022be5af23bfd53e0800000000000000
+      internalID: -2063216857898372576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200153_LeavesDark18_19
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 25
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 486afab08a7b29640800000000000000
+      internalID: 5085328861633160836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200153_LeavesDark18_20
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 22
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf1bce0c75c7e9fa0800000000000000
+      internalID: -5792055354411142660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200153_LeavesDark18_21
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 0
+        width: 35
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b61a1d7d784550220800000000000000
+      internalID: 2451458514591261035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SA0200153_LeavesDark18_0: -8834840800978450756
+      SA0200153_LeavesDark18_1: -7056855859237733870
+      SA0200153_LeavesDark18_10: 7610117689940208549
+      SA0200153_LeavesDark18_11: 6559509098853671882
+      SA0200153_LeavesDark18_12: -5123309267815235844
+      SA0200153_LeavesDark18_13: -6123773621653329158
+      SA0200153_LeavesDark18_14: 7746595564514127612
+      SA0200153_LeavesDark18_15: -8860027268729899025
+      SA0200153_LeavesDark18_16: 4515711467563926739
+      SA0200153_LeavesDark18_17: 2223968935854876830
+      SA0200153_LeavesDark18_18: -2063216857898372576
+      SA0200153_LeavesDark18_19: 5085328861633160836
+      SA0200153_LeavesDark18_2: 1396413052742174450
+      SA0200153_LeavesDark18_20: -5792055354411142660
+      SA0200153_LeavesDark18_21: 2451458514591261035
+      SA0200153_LeavesDark18_3: -8020136259769237543
+      SA0200153_LeavesDark18_4: 5119136105267483803
+      SA0200153_LeavesDark18_5: 1067115851211260211
+      SA0200153_LeavesDark18_6: 10696970272180304
+      SA0200153_LeavesDark18_7: 3226564545355806371
+      SA0200153_LeavesDark18_8: -4862587720875590040
+      SA0200153_LeavesDark18_9: -6697709161527379175
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,416 @@
+fileFormatVersion: 2
+guid: 856d11c8aa294e244b804ed1c6fab5d2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5631595399271273611
+    second: SA0200100_FlowerHanging3_0
+  - first:
+      213: 8667054826236222802
+    second: SA0200100_FlowerHanging3_1
+  - first:
+      213: 2537563713231158553
+    second: SA0200100_FlowerHanging3_2
+  - first:
+      213: 7816324411325938655
+    second: SA0200100_FlowerHanging3_3
+  - first:
+      213: 3409671470450079543
+    second: SA0200100_FlowerHanging3_4
+  - first:
+      213: -1134439882497798030
+    second: SA0200100_FlowerHanging3_5
+  - first:
+      213: -2830835798285528336
+    second: SA0200100_FlowerHanging3_6
+  - first:
+      213: -7155958767974021895
+    second: SA0200100_FlowerHanging3_7
+  - first:
+      213: -7157290371841383901
+    second: SA0200100_FlowerHanging3_8
+  - first:
+      213: 4050770155596717008
+    second: SA0200100_FlowerHanging3_9
+  - first:
+      213: 7268102946542110511
+    second: SA0200100_FlowerHanging3_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SA0200100_FlowerHanging3_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 54
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57b26b362dd88d1b0800000000000000
+      internalID: -5631595399271273611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200100_FlowerHanging3_1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 58
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25d15a6c170974870800000000000000
+      internalID: 8667054826236222802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200100_FlowerHanging3_2
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 46
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91d701aa0cc373320800000000000000
+      internalID: 2537563713231158553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200100_FlowerHanging3_3
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 48
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdbfb42b3a9297c60800000000000000
+      internalID: 7816324411325938655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200100_FlowerHanging3_4
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 33
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 737f5fc1326915f20800000000000000
+      internalID: 3409671470450079543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200100_FlowerHanging3_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 25
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 270dea8ffe8a140f0800000000000000
+      internalID: -1134439882497798030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200100_FlowerHanging3_6
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 17
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f25bb107d9d6b8d0800000000000000
+      internalID: -2830835798285528336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200100_FlowerHanging3_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 28
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f401971a6de0bc90800000000000000
+      internalID: -7155958767974021895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200100_FlowerHanging3_8
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 8
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3222218e3523cac90800000000000000
+      internalID: -7157290371841383901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200100_FlowerHanging3_9
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 16
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0db981f9ef9373830800000000000000
+      internalID: 4050770155596717008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200100_FlowerHanging3_10
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f27cc9f2f1d7dd460800000000000000
+      internalID: 7268102946542110511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SA0200100_FlowerHanging3_0: -5631595399271273611
+      SA0200100_FlowerHanging3_1: 8667054826236222802
+      SA0200100_FlowerHanging3_10: 7268102946542110511
+      SA0200100_FlowerHanging3_2: 2537563713231158553
+      SA0200100_FlowerHanging3_3: 7816324411325938655
+      SA0200100_FlowerHanging3_4: 3409671470450079543
+      SA0200100_FlowerHanging3_5: -1134439882497798030
+      SA0200100_FlowerHanging3_6: -2830835798285528336
+      SA0200100_FlowerHanging3_7: -7155958767974021895
+      SA0200100_FlowerHanging3_8: -7157290371841383901
+      SA0200100_FlowerHanging3_9: 4050770155596717008
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
