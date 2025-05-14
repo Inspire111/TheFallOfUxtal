@@ -14,24 +14,18 @@ public class Player_mvt : NetworkBehaviour
     private readonly Vector3 left = new Vector3(-1, 0, 0);
     private readonly Vector3 right = new Vector3(1, 0, 0);
 
-    public override void OnNetworkSpawn()
-    {
-        // Disable player movement for non-owner clients
-        if (!IsOwner)
-        {
-            enabled = false;
-            return;
-        }
-    }
+    
 
     void Start()
     {
+        
         rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
         if (!isMovementAllowed()) return;
+        if(!IsOwner) return;
 
         HandleWASDMovement();
     }
@@ -65,6 +59,7 @@ public class Player_mvt : NetworkBehaviour
 
     void FixedUpdate()
     {
+        if(!IsOwner) return;
         // Apply movement to Rigidbody2D using MovePosition
         rb.MovePosition(rb.position + (Vector2)(moveDirection * moveSpeed * Time.fixedDeltaTime));
     }
