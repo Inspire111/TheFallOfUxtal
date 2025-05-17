@@ -24,10 +24,7 @@ public class Player_mvt : NetworkBehaviour
 
     void Update()
     {
-        if (!isMovementAllowed()) return;
-        if(!IsOwner) return;
-
-        HandleWASDMovement();
+        
     }
 
     bool isMovementAllowed()
@@ -59,7 +56,8 @@ public class Player_mvt : NetworkBehaviour
 
     void FixedUpdate()
     {
-        if(!IsOwner) return;
+        if (!isMovementAllowed()) return;
+        HandleWASDMovement();
         // Apply movement to Rigidbody2D using MovePosition
         rb.MovePosition(rb.position + (Vector2)(moveDirection * moveSpeed * Time.fixedDeltaTime));
     }
