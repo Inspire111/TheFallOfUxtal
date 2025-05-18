@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: 67ade0b31770da6448de26e65e7479ac
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8581289694513846229
+    second: SA0200123_LeavesLight14_0
+  - first:
+      213: -5875775016135649627
+    second: SA0200123_LeavesLight14_1
+  - first:
+      213: 7367572308768965547
+    second: SA0200123_LeavesLight14_2
+  - first:
+      213: -4023725952945129943
+    second: SA0200123_LeavesLight14_3
+  - first:
+      213: -4212470978990663666
+    second: SA0200123_LeavesLight14_4
+  - first:
+      213: -3566131551926149638
+    second: SA0200123_LeavesLight14_5
+  - first:
+      213: -4795717369425160538
+    second: SA0200123_LeavesLight14_6
+  - first:
+      213: 3555822575680689396
+    second: SA0200123_LeavesLight14_7
+  - first:
+      213: -2896290439947981732
+    second: SA0200123_LeavesLight14_8
+  - first:
+      213: -5899601352057293752
+    second: SA0200123_LeavesLight14_9
+  - first:
+      213: -321809353521478253
+    second: SA0200123_LeavesLight14_10
+  - first:
+      213: 5736372245211905821
+    second: SA0200123_LeavesLight14_11
+  - first:
+      213: 3252429909007413477
+    second: SA0200123_LeavesLight14_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SA0200123_LeavesLight14_0
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 0
+        width: 243
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2828cb0d7229e880800000000000000
+      internalID: -8581289694513846229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200123_LeavesLight14_1
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 266
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a69e1701cd057ea0800000000000000
+      internalID: -5875775016135649627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200123_LeavesLight14_2
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 264
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba3cd21daffde3660800000000000000
+      internalID: 7367572308768965547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200123_LeavesLight14_3
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 266
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9267f2d709ad828c0800000000000000
+      internalID: -4023725952945129943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200123_LeavesLight14_4
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 211
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e089e9696fb4a85c0800000000000000
+      internalID: -4212470978990663666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200123_LeavesLight14_5
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 230
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afd11296f3e828ec0800000000000000
+      internalID: -3566131551926149638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200123_LeavesLight14_6
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 109
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a61e381670327db0800000000000000
+      internalID: -4795717369425160538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200123_LeavesLight14_7
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 56
+        width: 173
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f413c30bc1d85130800000000000000
+      internalID: 3555822575680689396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200123_LeavesLight14_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 83
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5c6a88a03f4ec7d0800000000000000
+      internalID: -2896290439947981732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200123_LeavesLight14_9
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 27
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 844f536e3d7602ea0800000000000000
+      internalID: -5899601352057293752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200123_LeavesLight14_10
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 44
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39544f51914b88bf0800000000000000
+      internalID: -321809353521478253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200123_LeavesLight14_11
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 39
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1ff3471a20bb9f40800000000000000
+      internalID: 5736372245211905821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SA0200123_LeavesLight14_12
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 31
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e03e3725c3f22d20800000000000000
+      internalID: 3252429909007413477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SA0200123_LeavesLight14_0: -8581289694513846229
+      SA0200123_LeavesLight14_1: -5875775016135649627
+      SA0200123_LeavesLight14_10: -321809353521478253
+      SA0200123_LeavesLight14_11: 5736372245211905821
+      SA0200123_LeavesLight14_12: 3252429909007413477
+      SA0200123_LeavesLight14_2: 7367572308768965547
+      SA0200123_LeavesLight14_3: -4023725952945129943
+      SA0200123_LeavesLight14_4: -4212470978990663666
+      SA0200123_LeavesLight14_5: -3566131551926149638
+      SA0200123_LeavesLight14_6: -4795717369425160538
+      SA0200123_LeavesLight14_7: 3555822575680689396
+      SA0200123_LeavesLight14_8: -2896290439947981732
+      SA0200123_LeavesLight14_9: -5899601352057293752
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

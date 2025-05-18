@@ -237,5 +237,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ab016ba7891cb74d8d6bf84d6d42b8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fightArenaPosition: {fileID: 1923602546785173448, guid: 61429faa5589e1647bf26d15c4f3e672, type: 3}
-  playerspawnTile: {fileID: 8738149596976922899, guid: 63f1ca236b747994daf14c160c8104ab, type: 3}
+  heightOffset: 0.7

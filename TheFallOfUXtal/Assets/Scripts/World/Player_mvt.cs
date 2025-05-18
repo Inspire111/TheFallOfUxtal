@@ -1,5 +1,6 @@
-using UnityEngine;
 using Unity.Netcode;
+using UnityEngine;
+
 public class Player_mvt : NetworkBehaviour
 {
     public float moveSpeed = 5f;
@@ -13,28 +14,22 @@ public class Player_mvt : NetworkBehaviour
     private readonly Vector3 left = new Vector3(-1, 0, 0);
     private readonly Vector3 right = new Vector3(1, 0, 0);
 
-    public override void OnNetworkSpawn()
-    {
-        if(!IsOwner)
-        {
-            enabled = false;
-            return;
-        }
-    }
+    
+
     void Start()
     {
+        
         rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
-        if (TP_Fight.isFightTileActivated)
-        {
-            moveDirection = Vector3.zero;
-            return;
-        }
+        
+    }
 
-        HandleWASDMovement();
+    bool isMovementAllowed()
+    {
+        return !TP_Fight.isFightTileActivated; // Movement is blocked when a fight tile is activated
     }
 
     void HandleWASDMovement()
@@ -61,6 +56,9 @@ public class Player_mvt : NetworkBehaviour
 
     void FixedUpdate()
     {
+        if (!isMovementAllowed()) return;
+        HandleWASDMovement();
+        // Apply movement to Rigidbody2D using MovePosition
         rb.MovePosition(rb.position + (Vector2)(moveDirection * moveSpeed * Time.fixedDeltaTime));
     }
 }

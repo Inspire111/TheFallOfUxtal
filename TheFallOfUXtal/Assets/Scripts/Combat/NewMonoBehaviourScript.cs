@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections.Generic;
 
 public class GridCombatManager : MonoBehaviour
@@ -14,19 +14,33 @@ public class GridCombatManager : MonoBehaviour
     public int numberOfObstacles = 5;
     public Transform gridParent;
 
-    public List<Vector3> walkablePositions = new List<Vector3>();  // Stores all walkable positions
+    public static Vector3 playerSpawnPosition = Vector3.zero;
+    public static bool arenaReady = false;
 
-    private GameObject[][] walkableTiles;
-    private bool arenaGenerated = false;
-    private Vector3 playerPosition;
+    private List<Vector3> walkablePositions = new List<Vector3>();
     private List<Vector3> enemyPositions = new List<Vector3>();
 
-    void Update()
+    private bool arenaGenerated = false;
+
+    [SerializeField] private float heightOffset = 0.5f;
+    public GameObject enemyPrefab;
+
+    public TurnManager turnManager;
+
+    public void GenerateArena()
     {
-        if (!arenaGenerated && Input.GetKeyDown(KeyCode.E))
+        if (arenaGenerated) return;
+
+        GenerateDiamondArena();
+        arenaGenerated = true;
+        arenaReady = true;
+
+        Debug.Log("Arena generated and ready!");
+
+        // Notify TurnManager
+        if (turnManager != null)
         {
-            GenerateDiamondArena();
-            arenaGenerated = true;
+            turnManager.SetPlayerInArena(true);
         }
     }
 
@@ -34,7 +48,6 @@ public class GridCombatManager : MonoBehaviour
     {
         Vector3 gridOrigin = gridParent.position;
         int totalRows = gridSize * 2 - 1;
-        walkableTiles = new GameObject[totalRows][];
 
         List<Vector3> availablePositions = new List<Vector3>();
         Vector3 topCenterPosition = Vector3.zero;
@@ -42,7 +55,6 @@ public class GridCombatManager : MonoBehaviour
         for (int y = 0; y < totalRows; y++)
         {
             int rowWidth = (y < gridSize) ? y + 1 : totalRows - y;
-            walkableTiles[y] = new GameObject[rowWidth];
 
             for (int x = 0; x < rowWidth; x++)
             {
@@ -50,12 +62,9 @@ public class GridCombatManager : MonoBehaviour
                 float isoY = -y * 0.5f * tileHeight;
                 Vector3 worldPosition = new Vector3(gridOrigin.x + isoX, gridOrigin.y + isoY, 0);
 
-                GameObject walkableTile = Instantiate(walkableTilePrefab, worldPosition, Quaternion.identity, gridParent);
-                walkableTiles[y][x] = walkableTile;
-
+                Instantiate(walkableTilePrefab, worldPosition, Quaternion.identity, gridParent);
                 availablePositions.Add(worldPosition);
 
-                // Explicitly set player spawn position at the **top-center**
                 if (y == 0 && x == rowWidth / 2)
                 {
                     topCenterPosition = worldPosition;
@@ -63,26 +72,44 @@ public class GridCombatManager : MonoBehaviour
             }
         }
 
-        // Store all positions as walkable initially
         walkablePositions.AddRange(availablePositions);
+        playerSpawnPosition = topCenterPosition;
 
-        // Place player at the top-center
-        playerPosition = topCenterPosition;
-        Instantiate(playerSpawnTilePrefab, playerPosition, Quaternion.identity, gridParent);
-        availablePositions.Remove(playerPosition); // Still walkable but not available for obstacles
+        Instantiate(playerSpawnTilePrefab, playerSpawnPosition, Quaternion.identity, gridParent);
+        availablePositions.Remove(playerSpawnPosition);
 
-        // Place enemies in the **bottom half**
+        PlaceEnemies(availablePositions);
+        PlaceObstacles(availablePositions);
+    }
+
+    void PlaceEnemies(List<Vector3> availablePositions)
+    {
         for (int i = 0; i < numberOfEnemies && availablePositions.Count > 0; i++)
         {
             int randomIndex = Random.Range(availablePositions.Count / 2, availablePositions.Count);
-            Vector3 enemyPosition = availablePositions[randomIndex];
-            Instantiate(enemySpawnTilePrefab, enemyPosition, Quaternion.identity, gridParent);
-            enemyPositions.Add(enemyPosition);
-            availablePositions.RemoveAt(randomIndex); // Still walkable but reserved for enemies
-        }
+            Vector3 enemyPos = availablePositions[randomIndex];
 
-        // Place obstacles while ensuring connectivity
-        PlaceObstacles(availablePositions);
+            Instantiate(enemySpawnTilePrefab, enemyPos, Quaternion.identity, gridParent);
+            SpawnEnemyAtTile(enemyPos);
+            enemyPositions.Add(enemyPos);
+
+            availablePositions.RemoveAt(randomIndex);
+        }
+    }
+
+    void SpawnEnemyAtTile(Vector3 position)
+    {
+        Vector3 spawnPositionWithOffset = position + new Vector3(0, heightOffset, 0);
+
+        if (enemyPrefab != null)
+        {
+            Instantiate(enemyPrefab, spawnPositionWithOffset, Quaternion.identity, gridParent);
+            Debug.Log($"Enemy spawned at: {spawnPositionWithOffset}");
+        }
+        else
+        {
+            Debug.LogError("Enemy prefab not assigned!");
+        }
     }
 
     void PlaceObstacles(List<Vector3> availablePositions)
@@ -92,21 +119,19 @@ public class GridCombatManager : MonoBehaviour
         for (int i = 0; i < numberOfObstacles && availablePositions.Count > 0; i++)
         {
             int randomIndex = Random.Range(0, availablePositions.Count);
-            Vector3 obstaclePosition = availablePositions[randomIndex];
+            Vector3 obstaclePos = availablePositions[randomIndex];
 
-            // Temporarily place obstacle and check connectivity
-            placedObstacles.Add(obstaclePosition);
+            placedObstacles.Add(obstaclePos);
 
-            if (IsArenaConnected(playerPosition, enemyPositions, placedObstacles))
+            if (IsArenaConnected(playerSpawnPosition, enemyPositions, placedObstacles))
             {
-                Instantiate(obstaclePrefab, obstaclePosition, Quaternion.identity, gridParent);
+                Instantiate(obstaclePrefab, obstaclePos, Quaternion.identity, gridParent);
                 availablePositions.RemoveAt(randomIndex);
-                walkablePositions.Remove(obstaclePosition); // Remove from walkable list
+                walkablePositions.Remove(obstaclePos);
             }
             else
             {
-                // If the obstacle disconnects the arena, remove it
-                placedObstacles.Remove(obstaclePosition);
+                placedObstacles.Remove(obstaclePos);
             }
         }
     }
@@ -122,13 +147,11 @@ public class GridCombatManager : MonoBehaviour
         {
             Vector3 current = queue.Dequeue();
 
-            // Check if all enemies are reachable
             if (targets.TrueForAll(enemy => visited.Contains(enemy)))
             {
                 return true;
             }
 
-            // Check neighbors (assuming a hexagonal-like grid movement)
             foreach (Vector3 neighbor in GetNeighbors(current))
             {
                 if (!visited.Contains(neighbor) && !obstacles.Contains(neighbor) && walkablePositions.Contains(neighbor))
@@ -139,7 +162,7 @@ public class GridCombatManager : MonoBehaviour
             }
         }
 
-        return false; // Not all enemies are reachable
+        return false;
     }
 
     List<Vector3> GetNeighbors(Vector3 position)

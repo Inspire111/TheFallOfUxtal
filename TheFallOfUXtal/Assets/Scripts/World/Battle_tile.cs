@@ -1,11 +1,18 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class TP_Fight : MonoBehaviour
 {
     private bool isPlayerInRange = false;
     public static bool isFightTileActivated = false;
 
-    [SerializeField] private GameObject playerspawnTile;  // Serialized GameObject for player's spawn tile
+    [SerializeField] private float heightOffset = 0.5f;
+
+    private GridCombatManager gridCombatManager;
+
+    private void Start()
+    {
+        gridCombatManager = FindObjectOfType<GridCombatManager>(); // Find reference in scene
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -29,20 +36,24 @@ public class TP_Fight : MonoBehaviour
     {
         if (isPlayerInRange && Input.GetKeyDown(KeyCode.E))
         {
-            isFightTileActivated = true;  // Disable WASD movement
+            if (!GridCombatManager.arenaReady)
+            {
+                gridCombatManager.GenerateArena(); // ✅ Generate arena when pressing E on FightTile
+            }
+
+            isFightTileActivated = true;
 
             GameObject player = GameObject.FindGameObjectWithTag("Player");
             if (player != null)
             {
-                // Teleport the player to the fixed position (-100, -100)
-                player.transform.position = new Vector3(-100f, -100f, player.transform.position.z);
-                Debug.Log("Player teleported to position (-100, -100).");
+                Vector3 spawnPositionWithOffset = GridCombatManager.playerSpawnPosition + new Vector3(0, heightOffset, 0);
+                player.transform.position = spawnPositionWithOffset;
+                Debug.Log($"Player teleported to spawn position: {spawnPositionWithOffset}");
             }
             else
             {
-                Debug.LogError("Player not assigned!");
+                Debug.LogError("Player not found in scene!");
             }
         }
     }
 }
-
