@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 3
   tags:
   - Fight
+  - MobZone
+  - Wall
   layers:
   - Default
   - TransparentFX
