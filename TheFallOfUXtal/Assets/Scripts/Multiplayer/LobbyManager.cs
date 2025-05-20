@@ -185,7 +185,7 @@ public class LobbyManager : MonoBehaviour
                 if (joinedLobbyParent != null)
                 {
                     joinedLobbyParent.SetActive(false);
-                    NetworkManager.Singleton.SceneManager.LoadScene("World",LoadSceneMode.Single);
+                    NetworkManager.Singleton.SceneManager.LoadScene("Multi",LoadSceneMode.Single);
                 }
                 else
                 {
