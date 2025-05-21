@@ -1395,6 +1395,7 @@ GameObject:
   - component: {fileID: 3903966173304054390}
   - component: {fileID: 2148153615083837000}
   - component: {fileID: 367475241551017038}
+  - component: {fileID: 5213278472698488622}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -1557,7 +1558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 2568990183
+  GlobalObjectIdHash: 3322060435
   InScenePlacedSourceGlobalObjectIdHash: 4135433935
   DeferredDespawnTick: 0
   Ownership: 1
@@ -1724,3 +1725,24 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 1
   m_ApplyActiveColorSpace: 1
+--- !u!114 &5213278472698488622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9073202926183925512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5468cc8ce4a7efc4d97d2acd606ec01d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 100
+  maxEnergy: 50
+  currentEnergy: 50
+  maxShield: 30
+  currentShield: 30
+  hpText: {fileID: 0}
+  energyText: {fileID: 0}
+  shieldText: {fileID: 0}

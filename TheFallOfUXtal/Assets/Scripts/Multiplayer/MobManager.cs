@@ -15,6 +15,7 @@ public class MobManager : MonoBehaviour
         public float rate;
     }
 
+    public string enemyTag = "Fight";
     public Wave[] waves;
     private int nextWave = 0;
     public float timeBetweenWaves = 5f;
@@ -37,7 +38,7 @@ public class MobManager : MonoBehaviour
     {
         if (state is SpawnState.Wainting)
         {
-            /*
+            
             if (!EnemyIsAlive())
             {
                 // new round
@@ -47,8 +48,8 @@ public class MobManager : MonoBehaviour
             {
                 return;
             }
-            */
-            return;
+            
+            
         }
         if (waveCountdown <= 0 && state is SpawnState.Counting)
         {
@@ -84,7 +85,7 @@ public class MobManager : MonoBehaviour
         if (searchCountdown <= 0)
         {
             searchCountdown = timeBetweenSearches;
-            if (GameObject.FindGameObjectWithTag("Enemy") == null)
+            if (GameObject.FindGameObjectWithTag(enemyTag) == null)
                 return false;
         }
         return true;

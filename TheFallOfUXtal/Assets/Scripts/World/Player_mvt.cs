@@ -32,17 +32,11 @@ public class Player_mvt : NetworkBehaviour
 
     void Update()
     {
-        if (!isMovementAllowed()) return;
-
         HandleWASDMovement();
         HandleDashInput();
         UpdateDashTimers();
     }
 
-    bool isMovementAllowed()
-    {
-        return !TP_Fight.isFightTileActivated;
-    }
 
     void HandleWASDMovement()
     {
@@ -96,7 +90,6 @@ public class Player_mvt : NetworkBehaviour
 
     void FixedUpdate()
     {
-        if (!isMovementAllowed()) return;
 
         float currentSpeed = isDashing ? dashSpeed : moveSpeed;
         rb.MovePosition(rb.position + (Vector2)(moveDirection * currentSpeed * Time.fixedDeltaTime));

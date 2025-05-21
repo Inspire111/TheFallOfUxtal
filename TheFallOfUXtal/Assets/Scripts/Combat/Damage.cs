@@ -39,7 +39,7 @@ public class MeleeHitbox : MonoBehaviour
     {
         Debug.Log("Hitbox triggered with: " + other.name);
 
-        MobHealth mob = other.GetComponent<MobHealth>();
+        MobHealth mob = other.GetComponentInParent<MobHealth>();
         if (mob != null)
         {
             mob.health -= damage;
