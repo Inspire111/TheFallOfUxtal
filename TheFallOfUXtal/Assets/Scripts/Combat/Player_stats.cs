@@ -19,9 +19,9 @@ public class PlayerStats : MonoBehaviour
     public int currentShield;
 
     // UI References
-    public TextMeshProUGUI hpText; // Assign this in Inspector
-    public TextMeshProUGUI energyText; // Assign this in Inspector
-    public TextMeshProUGUI shieldText; // Assign this in Inspector
+    public TextMeshProUGUI hpText;
+    public TextMeshProUGUI energyText;
+    public TextMeshProUGUI shieldText;
 
     void Start()
     {

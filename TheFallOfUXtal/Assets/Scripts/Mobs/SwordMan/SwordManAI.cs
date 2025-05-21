@@ -8,7 +8,6 @@ public class SwordManAI : MonoBehaviour
 
     [Header("Zone & Targets")]
     [SerializeField] private Collider2D zoneCollider;
-    [SerializeField] private Transform playerTransform;
 
     [Header("Movement Settings")]
     [SerializeField] private float wanderSpeed = 2f;
@@ -17,21 +16,13 @@ public class SwordManAI : MonoBehaviour
 
     private Vector2 targetPosition;
     private Coroutine wanderRoutine;
-    private Collider2D myCollider;
-    private Collider2D playerCollider;
+    private Transform chaseTarget;
 
     void Start()
     {
-        // Cache references
         if (zoneCollider == null)
             zoneCollider = GameObject.FindWithTag("Zone").GetComponent<Collider2D>();
-        myCollider = GetComponent<Collider2D>();
-        playerCollider = playerTransform.GetComponent<Collider2D>();
 
-        // Prevent physical collisions with the player
-        Physics2D.IgnoreCollision(myCollider, playerCollider, true);
-
-        // Begin wandering
         wanderRoutine = StartCoroutine(WanderRoutine());
     }
 
@@ -66,31 +57,34 @@ public class SwordManAI : MonoBehaviour
 
     void Update()
     {
-        if (currentState == State.Chase)
+        if (currentState == State.Chase && chaseTarget != null)
         {
             transform.position = Vector2.MoveTowards(
                 transform.position,
-                playerTransform.position,
+                chaseTarget.position,
                 chaseSpeed * Time.deltaTime
             );
         }
     }
 
-    // Called by ZoneTrigger
-    public void StartChase()
+    // Called by ZoneTrigger: assign target and begin chase
+    public void StartChase(Transform playerTransform)
     {
         if (wanderRoutine != null)
         {
             StopCoroutine(wanderRoutine);
             wanderRoutine = null;
         }
+        chaseTarget = playerTransform;
         currentState = State.Chase;
     }
 
+    // Called by ZoneTrigger: clear target and resume wander
     public void StopChase()
     {
         if (currentState == State.Chase)
         {
+            chaseTarget = null;
             currentState = State.Move;
             if (wanderRoutine == null)
                 wanderRoutine = StartCoroutine(WanderRoutine());

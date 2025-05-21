@@ -1,11 +1,9 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class DirectionalMeleeAttack : MonoBehaviour
 {
     public float attackCooldown = 0.5f;
-    public float hitboxDisplayTime = 0.1f;
 
     [Header("Directional Hitboxes")]
     [SerializeField] private GameObject hitboxUp;
@@ -37,13 +35,6 @@ public class DirectionalMeleeAttack : MonoBehaviour
             { "DownLeft", hitboxDownLeft },
             { "DownRight", hitboxDownRight }
         };
-
-        // Ensure all SpriteRenderers are disabled at start
-        foreach (var kvp in hitboxes)
-        {
-            var sr = kvp.Value.GetComponent<SpriteRenderer>();
-            if (sr != null) sr.enabled = false;
-        }
     }
 
     void Update()
@@ -66,26 +57,12 @@ public class DirectionalMeleeAttack : MonoBehaviour
 
         if (hitboxes.TryGetValue(directionName, out GameObject hitbox))
         {
-            SpriteRenderer sr = hitbox.GetComponent<SpriteRenderer>();
-            if (sr != null)
-            {
-                StartCoroutine(FlashSpriteRenderer(sr));
-            }
-
-            // Collider stays always enabled — it should be trigger-based
+            hitbox.SetActive(true);
         }
-    }
-
-    IEnumerator FlashSpriteRenderer(SpriteRenderer sr)
-    {
-        sr.enabled = true;
-        yield return new WaitForSeconds(hitboxDisplayTime);
-        sr.enabled = false;
     }
 
     string GetDirectionNameFromVector(Vector3 dir)
     {
-        // Diagonal priority
         if (dir.x > 0.5f && dir.y > 0.3f) return "UpRight";
         if (dir.x < -0.5f && dir.y > 0.3f) return "UpLeft";
         if (dir.x > 0.5f && dir.y < -0.3f) return "DownRight";
@@ -96,6 +73,6 @@ public class DirectionalMeleeAttack : MonoBehaviour
         if (dir.x > 0.5f) return "Right";
         if (dir.x < -0.5f) return "Left";
 
-        return "Down"; // fallback
+        return "Down";
     }
 }
