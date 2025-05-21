@@ -11,7 +11,7 @@ public class TP_Fight : MonoBehaviour
 
     private void Start()
     {
-        gridCombatManager = FindObjectOfType<GridCombatManager>(); // Find reference in scene
+        
     }
 
     private void OnTriggerEnter2D(Collider2D other)
