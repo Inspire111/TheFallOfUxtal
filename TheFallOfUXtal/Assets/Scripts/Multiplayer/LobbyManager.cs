@@ -94,7 +94,7 @@ public class LobbyManager : MonoBehaviour
                 newLobbyItem.GetChild(1).GetComponent<TextMeshProUGUI>().text = lobby.Players.Count.ToString();
             }
 
-            await Task.Delay(1000);
+            await Task.Delay(3000);
         }
     }
 
@@ -127,6 +127,8 @@ public class LobbyManager : MonoBehaviour
             lobbyCreationParent.SetActive(false);
             joinedLobbyParent.SetActive(true);
             joinedLobbyId = createdLobby.Id;
+            // Wait for the backend to sync
+            await Task.Delay(1000);
             UpdateLobbyInfo();
         }
         catch(LobbyServiceException e)
@@ -167,49 +169,49 @@ public class LobbyManager : MonoBehaviour
     }
 
     private bool isJoined = false;
+    private bool isJoining = false;
     private async void UpdateLobbyInfo()
     {
+        Debug.Log("UpdateLobbyInfo() started");
         while (Application.isPlaying)
         {
-            if (string.IsNullOrEmpty(joinedLobbyId))
+            await Task.Delay(5000);
+            if (string.IsNullOrEmpty(joinedLobbyId)) return;
+
+            Lobby lobby;
+            try
             {
+                lobby = await LobbyService.Instance.GetLobbyAsync(joinedLobbyId);
+                Debug.Log("Fetched lobby: " + lobby.Name);
+            }
+            catch
+            {
+                Debug.LogWarning("Failed to get lobby.");
+                continue;
+            }
+
+            // ✅ Ensure only one join attempt
+            if (!isJoined && !isJoining && lobby.Data["JoinCode"].Value != string.Empty)
+            {
+                isJoining = true;
+                try
+                {
+                    await relayManager.StartClientWithRelay(lobby.Data["JoinCode"].Value);
+                    isJoined = true;
+                    if (joinedLobbyParent != null)
+                    {
+
+                        joinedLobbyParent.SetActive(false);
+                        NetworkManager.Singleton.SceneManager.LoadScene("Multi", LoadSceneMode.Single);
+                    }
+                }
+                catch (System.Exception e)
+                {
+                    Debug.LogError("Join failed: " + e.Message);
+                    isJoined = false;
+                }
                 return;
             }
-
-            Lobby lobby = await LobbyService.Instance.GetLobbyAsync(joinedLobbyId);
-
-            if(!isJoined && lobby.Data["JoinCode"].Value != string.Empty)
-            {
-                await relayManager.StartClientWithRelay(lobby.Data["JoinCode"].Value);
-                isJoined = true;
-                if (joinedLobbyParent != null)
-                {
-                    joinedLobbyParent.SetActive(false);
-                    NetworkManager.Singleton.SceneManager.LoadScene("Multi",LoadSceneMode.Single);
-                }
-                else
-                {
-                    Debug.LogError("joinedLobbyParent is null in UpdateLobbyInfo()");
-                }
-                return;
-            }
-            if (joinedLobbyStartButton != null)
-            {
-                if(AuthenticationService.Instance.PlayerId == lobby.HostId)
-                {
-                    joinedLobbyStartButton.SetActive(true);
-                }
-                else
-                {
-                    joinedLobbyStartButton.SetActive(false);
-                }
-            }
-            else
-            {
-                Debug.LogError("joinedLobbyStartButton is null in UpdateLobbyInfo()");
-            }
-
-            
 
             joinedLobbyNameText.text = lobby.Name;
 
@@ -221,32 +223,57 @@ public class LobbyManager : MonoBehaviour
             foreach (Player player in lobby.Players)
             {
                 Transform newPlayerItem = Instantiate(playerItemPrefab, playerListParent);
-                newPlayerItem.GetChild(0).GetComponent<TextMeshProUGUI>().text = player.Data["Name"].Value;
-                newPlayerItem.GetChild(1).GetComponent<TextMeshProUGUI>().text = (lobby.HostId == player.Id) ? "Owner" : "User";
-            }
 
-            await Task.Delay(1000);
+                string playerDisplayName = player.Data.ContainsKey("Name") ? player.Data["Name"].Value : "Unnamed";
+                string role = lobby.HostId == player.Id ? "Owner" : "User";
+
+                newPlayerItem.GetChild(0).GetComponent<TextMeshProUGUI>().text = playerDisplayName;
+                newPlayerItem.GetChild(1).GetComponent<TextMeshProUGUI>().text = role;
+
+                Debug.Log($"Added player: {playerDisplayName} ({role})");
+            }
         }
     }
 
     public async void LobbyStart()
+{
+    if (NetworkManager.Singleton.IsHost || NetworkManager.Singleton.IsClient)
     {
-        if (NetworkManager.Singleton.IsHost || NetworkManager.Singleton.IsClient)
-        {
-            Debug.LogWarning("Already connected to a relay!");
-            return; // Prevent starting another instance
-        }
-
-        Lobby lobby = await LobbyService.Instance.GetLobbyAsync(joinedLobbyId);
-        string JoinCode = await relayManager.StartHostWithRelay(lobby.MaxPlayers);
-        Debug.Log("JoinCode on StartHostWithRelay : "+ JoinCode);
-        isJoined = true;
-        await LobbyService.Instance.UpdateLobbyAsync(joinedLobbyId, new UpdateLobbyOptions
-        { Data = new Dictionary<string, DataObject> { { "JoinCode", new DataObject(DataObject.VisibilityOptions.Public, JoinCode) } } });
-
-        lobbyListParent.SetActive(false);
-        joinedLobbyParent.SetActive(false);
-        NetworkManager.Singleton.SceneManager.LoadScene("World",LoadSceneMode.Single);
+        Debug.LogWarning("Already connected to a relay!");
+        return;
     }
+
+    Lobby lobby = await LobbyService.Instance.GetLobbyAsync(joinedLobbyId);
+    string joinCode = await relayManager.StartHostWithRelay(lobby.MaxPlayers);
+    Debug.Log("JoinCode on StartHostWithRelay: " + joinCode);
+
+    isJoined = true;
+
+    try
+    {
+        await LobbyService.Instance.UpdateLobbyAsync(joinedLobbyId, new UpdateLobbyOptions
+        {
+            Data = new Dictionary<string, DataObject>
+            {
+                { "JoinCode", new DataObject(DataObject.VisibilityOptions.Public, joinCode) }
+            }
+        });
+
+        Debug.Log("JoinCode successfully updated in lobby.");
+    }
+    catch (LobbyServiceException e)
+    {
+        Debug.LogError("Failed to update lobby with join code: " + e);
+        return;
+    }
+
+    // ✅ Delay a moment to let clients see the update
+    await Task.Delay(1500);
+
+    lobbyListParent.SetActive(false);
+    joinedLobbyParent.SetActive(false);
+    NetworkManager.Singleton.SceneManager.LoadScene("Multi", LoadSceneMode.Single);
+}
+
 
 }

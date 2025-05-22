@@ -420,16 +420,3 @@ MonoBehaviour:
   wanderSpeed: 4
   chaseSpeed: 6
   idleTime: 2
---- !u!114 &3861600795756266687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7047049743606017219}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb8b1811adc511e43a692df3cb937192, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
