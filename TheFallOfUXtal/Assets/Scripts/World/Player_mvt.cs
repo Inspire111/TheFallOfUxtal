@@ -1,73 +1,93 @@
 using Unity.Netcode;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Player_mvt : NetworkBehaviour
 {
+    [Header("Movement Settings")]
     public float moveSpeed = 5f;
+
+    [Header("Dash Settings")]
     public float dashSpeed = 15f;
     public float dashDuration = 0.2f;
     public float dashCooldown = 1f;
 
     private Rigidbody2D rb;
+    private TrailRenderer trail;
+    private InputSystem_Actions inputActions;
+
     private Vector3 moveDirection;
+    public Vector3 lastMoveDirection { get; private set; }
 
     private float dashTimeRemaining;
     private float dashCooldownRemaining;
     private bool isDashing;
 
-    private readonly Vector3 upLeft = new Vector3(-1, 0.5f, 0);
-    private readonly Vector3 upRight = new Vector3(1, 0.5f, 0);
-    private readonly Vector3 downLeft = new Vector3(-1, -0.5f, 0);
-    private readonly Vector3 downRight = new Vector3(1, -0.5f, 0);
-    private readonly Vector3 left = new Vector3(-1, 0, 0);
-    private readonly Vector3 right = new Vector3(1, 0, 0);
+    private void Awake()
+    {
+        inputActions = new InputSystem_Actions();
+    }
 
-    public Vector3 lastMoveDirection { get; private set; }
+    private void OnEnable()
+    {
+        inputActions.Enable();
+    }
 
+    private void OnDisable()
+    {
+        inputActions.Disable();
+    }
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        trail = GetComponent<TrailRenderer>();
+
+        trail.enabled = false;
+        if (trail.material == null)
+        {
+            var mat = new Material(Shader.Find("Sprites/Default"));
+            mat.color = Color.white;
+            trail.material = mat;
+        }
+
+        trail.time = 0.3f;
+        trail.startWidth = 0.2f;
+        trail.endWidth = 0.1f;
     }
 
     void Update()
     {
-        HandleWASDMovement();
+        HandleMovementInput();
         HandleDashInput();
         UpdateDashTimers();
     }
 
-
-    void HandleWASDMovement()
+    void FixedUpdate()
     {
-        moveDirection = Vector3.zero;
+        float speed = isDashing ? dashSpeed : moveSpeed;
+        Vector2 velocity = moveDirection.normalized * speed * Time.fixedDeltaTime;
+        rb.MovePosition(rb.position + velocity);
+    }
 
-        bool w = Input.GetKey(KeyCode.W);
-        bool a = Input.GetKey(KeyCode.A);
-        bool s = Input.GetKey(KeyCode.S);
-        bool d = Input.GetKey(KeyCode.D);
+    void HandleMovementInput()
+    {
+        Vector2 input = inputActions.Player.Move.ReadValue<Vector2>();
 
-        if (w && !a && !d) moveDirection += Vector3.up;
-        if (s && !a && !d) moveDirection += Vector3.down;
-        if (w && a) moveDirection += upLeft;
-        if (w && d) moveDirection += upRight;
-        if (s && a) moveDirection += downLeft;
-        if (s && d) moveDirection += downRight;
-        if (a && !w && !s) moveDirection += left;
-        if (d && !w && !s) moveDirection += right;
+        moveDirection = new Vector3(input.x, input.y, 0f);
 
         if (moveDirection != Vector3.zero)
             lastMoveDirection = moveDirection;
-
     }
 
     void HandleDashInput()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift) && dashCooldownRemaining <= 0f && moveDirection != Vector3.zero)
+        if (inputActions.Player.Sprint.WasPressedThisFrame() && dashCooldownRemaining <= 0f && moveDirection != Vector3.zero)
         {
             isDashing = true;
             dashTimeRemaining = dashDuration;
             dashCooldownRemaining = dashCooldown;
+            trail.enabled = true;
         }
     }
 
@@ -79,6 +99,7 @@ public class Player_mvt : NetworkBehaviour
             if (dashTimeRemaining <= 0f)
             {
                 isDashing = false;
+                trail.enabled = false;
             }
         }
 
@@ -88,17 +109,13 @@ public class Player_mvt : NetworkBehaviour
         }
     }
 
-    void FixedUpdate()
-    {
-
-        float currentSpeed = isDashing ? dashSpeed : moveSpeed;
-        rb.MovePosition(rb.position + (Vector2)(moveDirection * currentSpeed * Time.fixedDeltaTime));
-    }
-
     public Vector3 GetLastMoveDirection()
     {
         return lastMoveDirection;
     }
 
+    public InputSystem_Actions GetInputActions()
+    {
+        return inputActions;
+    }
 }
-
