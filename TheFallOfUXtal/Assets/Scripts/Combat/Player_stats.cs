@@ -1,24 +1,33 @@
 using UnityEngine;
-using TMPro; // Add this if using TextMeshPro
+using TMPro;
+
+public enum WeaponType
+{
+    Melee,
+    Spear
+}
 
 public class PlayerStats : MonoBehaviour
 {
-    // Health stats
     [Header("Health Stats")]
     public int maxHealth = 100;
     public int currentHealth;
 
-    // Energy stats
     [Header("Energy Stats")]
     public int maxEnergy = 50;
     public int currentEnergy;
 
-    // Shield stats
     [Header("Shield Stats")]
     public int maxShield = 30;
     public int currentShield;
 
-    // UI References
+    [Header("Weapons Owned")]
+    public bool hasMelee = true;
+    public bool hasSpear = true;  
+
+    [Header("Current Weapon")]
+    public WeaponType currentWeapon = WeaponType.Melee;
+
     public TextMeshProUGUI hpText;
     public TextMeshProUGUI energyText;
     public TextMeshProUGUI shieldText;
@@ -29,13 +38,11 @@ public class PlayerStats : MonoBehaviour
         currentEnergy = maxEnergy;
         currentShield = maxShield;
 
-        UpdateAllStatsText(); // Update all UI texts at the start
+        UpdateAllStatsText();
     }
 
-    // Function to take damage
     public void TakeDamage(int damage)
     {
-        // If the player has a shield, absorb damage with shield first
         if (currentShield > 0)
         {
             int shieldDamage = Mathf.Min(damage, currentShield);
@@ -43,7 +50,6 @@ public class PlayerStats : MonoBehaviour
             damage -= shieldDamage;
         }
 
-        // Apply remaining damage to health
         currentHealth -= damage;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
         Debug.Log("Player took " + damage + " damage. HP left: " + currentHealth);
@@ -51,7 +57,6 @@ public class PlayerStats : MonoBehaviour
         UpdateAllStatsText();
     }
 
-    // Function to heal
     public void Heal(int amount)
     {
         currentHealth += amount;
@@ -61,7 +66,6 @@ public class PlayerStats : MonoBehaviour
         UpdateAllStatsText();
     }
 
-    // Function to use energy
     public void UseEnergy(int amount)
     {
         currentEnergy -= amount;
@@ -71,7 +75,6 @@ public class PlayerStats : MonoBehaviour
         UpdateAllStatsText();
     }
 
-    // Function to recharge energy
     public void RechargeEnergy(int amount)
     {
         currentEnergy += amount;
@@ -81,11 +84,10 @@ public class PlayerStats : MonoBehaviour
         UpdateAllStatsText();
     }
 
-    // Function to update all stats text
     void UpdateAllStatsText()
     {
         if (hpText != null)
-            hpText.text =  currentHealth + " / " + maxHealth;
+            hpText.text = currentHealth + " / " + maxHealth;
 
         if (energyText != null)
             energyText.text = currentEnergy + " / " + maxEnergy;

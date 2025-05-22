@@ -17,12 +17,14 @@ public class DirectionalMeleeAttack : MonoBehaviour
 
     private float cooldownTimer;
     private Player_mvt playerMovement;
+    private InputSystem_Actions inputActions;
 
     private Dictionary<string, GameObject> hitboxes;
 
     void Start()
     {
         playerMovement = GetComponent<Player_mvt>();
+        inputActions = playerMovement.GetInputActions();
 
         hitboxes = new Dictionary<string, GameObject>
         {
@@ -41,7 +43,7 @@ public class DirectionalMeleeAttack : MonoBehaviour
     {
         cooldownTimer -= Time.deltaTime;
 
-        if (Input.GetKeyDown(KeyCode.Space) && cooldownTimer <= 0f)
+        if (inputActions.Player.Attack.WasPressedThisFrame() && cooldownTimer <= 0f)
         {
             PerformAttack();
             cooldownTimer = attackCooldown;
