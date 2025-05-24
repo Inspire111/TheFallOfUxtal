@@ -14,8 +14,11 @@ public class MobHealthMulti : NetworkBehaviour
     public void TakeDamage(float amount, GameObject player)
     {
         Debug.Log("Is taking damage");
-        if (!isDead) return;
-
+        if (isDead)
+        {
+            Die();
+            return;
+        }
         Health -= amount;
         lastAttacker = player;
 
@@ -40,7 +43,8 @@ public class MobHealthMulti : NetworkBehaviour
         isDead = true;
         AwardScoreTo(lastAttacker); // Only done on server
         AwardHeal(lastAttacker);
-        Destroy(gameObject);
+        if (IsHost) Destroy(gameObject);
+        else RequestDestroyServerRpc(GetComponent<NetworkObject>().NetworkObjectId);
     }
 
     // Called by the mob when dying
@@ -67,6 +71,13 @@ public class MobHealthMulti : NetworkBehaviour
             playerStat.Heal(20); // Add reward
         }
     }
-    
+    [ServerRpc(RequireOwnership = false)]
+    public void RequestDestroyServerRpc(ulong networkObjectId)
+    {
+        if (NetworkManager.SpawnManager.SpawnedObjects.TryGetValue(networkObjectId, out var netObj))
+        {
+            Destroy(netObj.gameObject); // or GameObject.Destroy(netObj.gameObject);
+        }
+    }
 
 }
