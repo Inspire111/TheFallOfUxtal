@@ -174,6 +174,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -784,7 +797,34 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Death_Left_0: -2006666255292648956
+      Death_Left_1: 170431861220012606
+      Death_Left_10: 3340532950218937244
+      Death_Left_11: 2916338917450478889
+      Death_Left_12: -5472529607081214922
+      Death_Left_13: 7639785805760354384
+      Death_Left_14: 605608945183588644
+      Death_Left_15: -8287837751217128262
+      Death_Left_16: -2905485355340381614
+      Death_Left_17: -6315782616655611070
+      Death_Left_18: 7966022845112115857
+      Death_Left_19: 3157797861992450064
+      Death_Left_2: 5110904520163500286
+      Death_Left_20: -7614761752650349675
+      Death_Left_21: 2668498990653438007
+      Death_Left_22: -3331813531740006015
+      Death_Left_23: -9074621027281327562
+      Death_Left_24: -3369825464268303424
+      Death_Left_25: 3023261678174738206
+      Death_Left_26: 8592471401113631088
+      Death_Left_3: 5388427557729818302
+      Death_Left_4: -4316032188861933670
+      Death_Left_5: 5867707342894414649
+      Death_Left_6: -1055107330458736277
+      Death_Left_7: 6451600762618841356
+      Death_Left_8: 8002307385890804336
+      Death_Left_9: -7346985403672705664
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

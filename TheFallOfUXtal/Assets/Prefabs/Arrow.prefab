@@ -168,5 +168,5 @@ MonoBehaviour:
   maxSpeed: 20
   minDamage: 5
   maxDamage: 50
-  minLiveSpeed: 0.5
+  minLiveSpeed: 5
   checkInterval: 0.1

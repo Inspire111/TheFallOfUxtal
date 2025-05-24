@@ -21,14 +21,14 @@ public class WeaponManagerMulti : MonoBehaviour
 
     void Update()
     {
-        if (inputActions.Player.Previous.WasPressedThisFrame())
+        if (inputActions.Player.MeleeSelect.WasPressedThisFrame())
         {
             stats.currentWeapon = WeaponTypeMulti.Melee;
             Debug.Log("Switched to Melee");
             UpdateWeaponScripts();
         }
 
-        if (inputActions.Player.Next.WasPressedThisFrame())
+        if (inputActions.Player.BowSelect.WasPressedThisFrame())
         {
             if (stats.hasSpear)
             {

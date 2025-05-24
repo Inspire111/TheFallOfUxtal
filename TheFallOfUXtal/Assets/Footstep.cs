@@ -20,7 +20,7 @@ public class Footstep : MonoBehaviour
 
     void Update()
     {
-        float speed = rb.velocity.magnitude;
+        float speed = rb.linearVelocity.magnitude;
 
         if (speed > 0.1f)
         {

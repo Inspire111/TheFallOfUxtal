@@ -7,6 +7,7 @@ TagManager:
   - Fight
   - MobZone
   - Wall
+  - Boss
   layers:
   - Default
   - TransparentFX
