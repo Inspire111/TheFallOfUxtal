@@ -82,7 +82,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Previous"",
+                    ""name"": ""MeleeSelect"",
                     ""type"": ""Button"",
                     ""id"": ""2776c80d-3c14-4091-8c56-d04ced07a2b0"",
                     ""expectedControlType"": """",
@@ -91,10 +91,28 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Next"",
+                    ""name"": ""SpearSelect"",
                     ""type"": ""Button"",
                     ""id"": ""b7230bb6-fc9b-4f52-8b25-f5e19cb2c2ba"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""BowSelect"",
+                    ""type"": ""Button"",
+                    ""id"": ""ac5a7d2a-53cb-4bff-b492-8d3194099c34"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""PotionSelect"",
+                    ""type"": ""Button"",
+                    ""id"": ""41c6470c-a72a-4e71-bbdb-d1b9a2ba2f50"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -273,7 +291,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
-                    ""action"": ""Next"",
+                    ""action"": ""SpearSelect"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -284,7 +302,51 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Next"",
+                    ""action"": ""SpearSelect"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5e2f37c4-530d-456d-8f94-66e9f2abd9d3"",
+                    ""path"": ""<Keyboard>/3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""BowSelect"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0efeca27-ca40-4ac6-ae4e-b1ce67cedc52"",
+                    ""path"": ""<Gamepad>/dpad/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""BowSelect"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7f7abeb0-e6b0-4c0b-b62a-0e06dfbdec8b"",
+                    ""path"": ""<Keyboard>/4"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""PotionSelect"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""29e4f962-1d84-4a58-a476-3f22f43d2d0c"",
+                    ""path"": ""<Gamepad>/dpad/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""PotionSelect"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -328,18 +390,18 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
-                    ""action"": ""Previous"",
+                    ""action"": ""MeleeSelect"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
                     ""id"": ""25060bbd-a3a6-476e-8fba-45ae484aad05"",
-                    ""path"": ""<Gamepad>/dpad/left"",
+                    ""path"": ""<Gamepad>/dpad/up"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Previous"",
+                    ""action"": ""MeleeSelect"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -999,8 +1061,10 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
         m_Player_Crouch = m_Player.FindAction("Crouch", throwIfNotFound: true);
         m_Player_Sprint = m_Player.FindAction("Sprint", throwIfNotFound: true);
-        m_Player_Previous = m_Player.FindAction("Previous", throwIfNotFound: true);
-        m_Player_Next = m_Player.FindAction("Next", throwIfNotFound: true);
+        m_Player_MeleeSelect = m_Player.FindAction("MeleeSelect", throwIfNotFound: true);
+        m_Player_SpearSelect = m_Player.FindAction("SpearSelect", throwIfNotFound: true);
+        m_Player_BowSelect = m_Player.FindAction("BowSelect", throwIfNotFound: true);
+        m_Player_PotionSelect = m_Player.FindAction("PotionSelect", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1086,8 +1150,10 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Interact;
     private readonly InputAction m_Player_Crouch;
     private readonly InputAction m_Player_Sprint;
-    private readonly InputAction m_Player_Previous;
-    private readonly InputAction m_Player_Next;
+    private readonly InputAction m_Player_MeleeSelect;
+    private readonly InputAction m_Player_SpearSelect;
+    private readonly InputAction m_Player_BowSelect;
+    private readonly InputAction m_Player_PotionSelect;
     public struct PlayerActions
     {
         private @InputSystem_Actions m_Wrapper;
@@ -1098,8 +1164,10 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         public InputAction @Interact => m_Wrapper.m_Player_Interact;
         public InputAction @Crouch => m_Wrapper.m_Player_Crouch;
         public InputAction @Sprint => m_Wrapper.m_Player_Sprint;
-        public InputAction @Previous => m_Wrapper.m_Player_Previous;
-        public InputAction @Next => m_Wrapper.m_Player_Next;
+        public InputAction @MeleeSelect => m_Wrapper.m_Player_MeleeSelect;
+        public InputAction @SpearSelect => m_Wrapper.m_Player_SpearSelect;
+        public InputAction @BowSelect => m_Wrapper.m_Player_BowSelect;
+        public InputAction @PotionSelect => m_Wrapper.m_Player_PotionSelect;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1127,12 +1195,18 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Sprint.started += instance.OnSprint;
             @Sprint.performed += instance.OnSprint;
             @Sprint.canceled += instance.OnSprint;
-            @Previous.started += instance.OnPrevious;
-            @Previous.performed += instance.OnPrevious;
-            @Previous.canceled += instance.OnPrevious;
-            @Next.started += instance.OnNext;
-            @Next.performed += instance.OnNext;
-            @Next.canceled += instance.OnNext;
+            @MeleeSelect.started += instance.OnMeleeSelect;
+            @MeleeSelect.performed += instance.OnMeleeSelect;
+            @MeleeSelect.canceled += instance.OnMeleeSelect;
+            @SpearSelect.started += instance.OnSpearSelect;
+            @SpearSelect.performed += instance.OnSpearSelect;
+            @SpearSelect.canceled += instance.OnSpearSelect;
+            @BowSelect.started += instance.OnBowSelect;
+            @BowSelect.performed += instance.OnBowSelect;
+            @BowSelect.canceled += instance.OnBowSelect;
+            @PotionSelect.started += instance.OnPotionSelect;
+            @PotionSelect.performed += instance.OnPotionSelect;
+            @PotionSelect.canceled += instance.OnPotionSelect;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -1155,12 +1229,18 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Sprint.started -= instance.OnSprint;
             @Sprint.performed -= instance.OnSprint;
             @Sprint.canceled -= instance.OnSprint;
-            @Previous.started -= instance.OnPrevious;
-            @Previous.performed -= instance.OnPrevious;
-            @Previous.canceled -= instance.OnPrevious;
-            @Next.started -= instance.OnNext;
-            @Next.performed -= instance.OnNext;
-            @Next.canceled -= instance.OnNext;
+            @MeleeSelect.started -= instance.OnMeleeSelect;
+            @MeleeSelect.performed -= instance.OnMeleeSelect;
+            @MeleeSelect.canceled -= instance.OnMeleeSelect;
+            @SpearSelect.started -= instance.OnSpearSelect;
+            @SpearSelect.performed -= instance.OnSpearSelect;
+            @SpearSelect.canceled -= instance.OnSpearSelect;
+            @BowSelect.started -= instance.OnBowSelect;
+            @BowSelect.performed -= instance.OnBowSelect;
+            @BowSelect.canceled -= instance.OnBowSelect;
+            @PotionSelect.started -= instance.OnPotionSelect;
+            @PotionSelect.performed -= instance.OnPotionSelect;
+            @PotionSelect.canceled -= instance.OnPotionSelect;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -1349,8 +1429,10 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         void OnInteract(InputAction.CallbackContext context);
         void OnCrouch(InputAction.CallbackContext context);
         void OnSprint(InputAction.CallbackContext context);
-        void OnPrevious(InputAction.CallbackContext context);
-        void OnNext(InputAction.CallbackContext context);
+        void OnMeleeSelect(InputAction.CallbackContext context);
+        void OnSpearSelect(InputAction.CallbackContext context);
+        void OnBowSelect(InputAction.CallbackContext context);
+        void OnPotionSelect(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {
