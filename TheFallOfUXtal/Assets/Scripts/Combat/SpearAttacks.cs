@@ -45,7 +45,6 @@ public class SpearAttack : MonoBehaviour
     {
         cooldownTimer -= Time.deltaTime;
 
-        // Use the new input system's Attack button instead of Input.GetKeyDown
         if (inputActions.Player.Attack.WasPressedThisFrame() && cooldownTimer <= 0f)
         {
             if (stats.currentWeapon != WeaponType.Spear)
