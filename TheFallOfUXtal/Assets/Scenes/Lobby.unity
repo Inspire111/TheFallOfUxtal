@@ -648,7 +648,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &243871128
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1108,10 +1108,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1134916079}
-        m_TargetAssemblyTypeName: LobbyManager, Assembly-CSharp
-        m_MethodName: ExitLobbyCreationButton
-        m_Mode: 1
+      - m_Target: {fileID: 1134916080}
+        m_TargetAssemblyTypeName: LobbyUIManager, Assembly-CSharp
+        m_MethodName: ShowLobbyList
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1571,7 +1571,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1000817578
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1911,6 +1911,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1134916078}
   - component: {fileID: 1134916079}
+  - component: {fileID: 1134916080}
   m_Layer: 0
   m_Name: LobbyManager
   m_TagString: Untagged
@@ -1946,19 +1947,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   relayManager: {fileID: 454160492}
-  createLobbyNameField: {fileID: 1963815957}
-  lobbyCreationParent: {fileID: 1405293490}
+--- !u!114 &1134916080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134916077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c02cbfdf4deccf644a90e0ec29230584, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profileSetupParent: {fileID: 243871127}
   lobbyListParent: {fileID: 1560616161}
+  lobbyCreationParent: {fileID: 1405293490}
+  joinedLobbyParent: {fileID: 1000817577}
+  profileNameField: {fileID: 1271221295}
+  createLobbyNameField: {fileID: 1963815957}
   lobbyContentParent: {fileID: 78378958}
   lobbyItemPrefab: {fileID: 4271794981240008804, guid: 262ea7273d3905243a5af232b24612d7, type: 3}
-  profileSetupParent: {fileID: 243871127}
-  profileNameField: {fileID: 1271221295}
-  joinedLobbyParent: {fileID: 1000817577}
   playerItemPrefab: {fileID: 4271794981240008804, guid: 80c4bf470fc0bf9429d16c19efc53a95, type: 3}
   playerListParent: {fileID: 1163330600}
   joinedLobbyNameText: {fileID: 1216561823}
-  joinedLobbyStartButton: {fileID: 1038006496}
-  joinedLobbyId: 
 --- !u!1 &1163330599
 GameObject:
   m_ObjectHideFlags: 0
@@ -3417,9 +3428,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1134916079}
-        m_TargetAssemblyTypeName: LobbyManager, Assembly-CSharp
-        m_MethodName: CreateNewLobbyButton
+      - m_Target: {fileID: 1134916080}
+        m_TargetAssemblyTypeName: LobbyUIManager, Assembly-CSharp
+        m_MethodName: ShowLobbyCreation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3746,7 +3757,7 @@ MonoBehaviour:
   NetworkConfig:
     ProtocolVersion: 0
     NetworkTransport: {fileID: 1906997397}
-    PlayerPrefab: {fileID: 5076331826111944730, guid: 80c4bf470fc0bf9429d16c19efc53a95, type: 3}
+    PlayerPrefab: {fileID: 6960210970573033755, guid: 6f30848dbdfcce54ca111bb126d8c486, type: 3}
     Prefabs:
       NetworkPrefabsLists:
       - {fileID: 11400000, guid: 734fe2817da5cb64f9cbcf90b5a6ef7f, type: 2}

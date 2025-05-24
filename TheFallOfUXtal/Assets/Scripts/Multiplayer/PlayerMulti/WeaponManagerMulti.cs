@@ -1,19 +1,19 @@
 using UnityEngine;
 
-public class WeaponManager : MonoBehaviour
+public class WeaponManagerMulti : MonoBehaviour
 {
-    private PlayerStats stats;
-    private DirectionalMeleeAttack meleeAttack;
-    private SpearAttack spearAttack;
-    private Player_mvt playerMovement;
+    private PlayerStatsMulti stats;
+    private DirectionalMeleeAttackMulti meleeAttack;
+    private SpearAttackMulti spearAttackMulti;
+    private Player_mvtMulti playerMovement;
     private InputSystem_Actions inputActions;
 
     void Start()
     {
-        stats = GetComponent<PlayerStats>();
-        meleeAttack = GetComponent<DirectionalMeleeAttack>();
-        spearAttack = GetComponent<SpearAttack>();
-        playerMovement = GetComponent<Player_mvt>();
+        stats = GetComponent<PlayerStatsMulti>();
+        meleeAttack = GetComponent<DirectionalMeleeAttackMulti>();
+        spearAttackMulti = GetComponent<SpearAttackMulti>();
+        playerMovement = GetComponent<Player_mvtMulti>();
         inputActions = playerMovement.GetInputActions();
 
         UpdateWeaponScripts();
@@ -23,7 +23,7 @@ public class WeaponManager : MonoBehaviour
     {
         if (inputActions.Player.Previous.WasPressedThisFrame())
         {
-            stats.currentWeapon = WeaponType.Melee;
+            stats.currentWeapon = WeaponTypeMulti.Melee;
             Debug.Log("Switched to Melee");
             UpdateWeaponScripts();
         }
@@ -32,7 +32,7 @@ public class WeaponManager : MonoBehaviour
         {
             if (stats.hasSpear)
             {
-                stats.currentWeapon = WeaponType.Spear;
+                stats.currentWeapon = WeaponTypeMulti.Spear;
                 Debug.Log("Switched to Spear");
                 UpdateWeaponScripts();
             }
@@ -45,8 +45,8 @@ public class WeaponManager : MonoBehaviour
     
     void UpdateWeaponScripts()
     {
-        meleeAttack.enabled = (stats.currentWeapon == WeaponType.Melee);
-        spearAttack.enabled = (stats.currentWeapon == WeaponType.Spear);
+        meleeAttack.enabled = stats.currentWeapon == WeaponTypeMulti.Melee;
+        spearAttackMulti.enabled = stats.currentWeapon == WeaponTypeMulti.Spear;
     }
     
 }

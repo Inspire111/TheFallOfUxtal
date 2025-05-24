@@ -1,117 +1,166 @@
-using System;
 using System.Collections;
 using UnityEngine;
+using Unity.Netcode;
 
-public class MobManager : MonoBehaviour
+public class MobManager : NetworkBehaviour
 {
-    public enum SpawnState { Counting, Spawning, Wainting }
+    public enum SpawnState { Counting, Spawning, Waiting, End }
+
 
     [System.Serializable]
     public class Wave
     {
         public int id;
-        public GameObject enemy;
+        public GameObject enemyPrefab; // Must have NetworkObject
         public int count;
         public float rate;
+
     }
 
-    public string enemyTag = "Fight";
     public Wave[] waves;
     private int nextWave = 0;
     public float timeBetweenWaves = 5f;
-    public float waveCountdown;
+    private float waveCountdown;
 
     public float timeBetweenSearches = 1f;
-    public float searchCountdown;
-    public SpawnState state;
+    private float searchCountdown = 1f;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public SpawnState state = SpawnState.Counting;
+    public string targetTag;
+
+    public GameObject HUD;
+    public TMPro.TextMeshProUGUI player1Text;
+    public TMPro.TextMeshProUGUI player2Text;
+
+
+    private void Start()
     {
+        if (!IsServer) enabled = false; // Only run on server
+
         waveCountdown = timeBetweenWaves;
-        searchCountdown = timeBetweenSearches;
-        state = SpawnState.Counting;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if (state is SpawnState.Wainting)
+        if (!IsServer) return;
+
+        if (state == SpawnState.Waiting)
         {
-            
             if (!EnemyIsAlive())
             {
-                // new round
                 WaveCompleted();
             }
             else
             {
                 return;
             }
-            
-            
         }
-        if (waveCountdown <= 0 && state is SpawnState.Counting)
-        {
-            StartCoroutine(SpawnWaves(waves[nextWave]));
-        }
-        else if(state is SpawnState.Counting)
-        {
-            waveCountdown -= Time.deltaTime;
 
+        if (state == SpawnState.Counting)
+        {
+            if (waveCountdown <= 0f)
+            {
+                StartCoroutine(SpawnWave(waves[nextWave]));
+            }
+            else
+            {
+                waveCountdown -= Time.deltaTime;
+            }
         }
     }
 
     void WaveCompleted()
     {
-        Debug.Log("Wave Completed !");
+        Debug.Log("Wave Completed!");
 
-        state = SpawnState.Counting;
+        state = SpawnState.End;
         waveCountdown = timeBetweenWaves;
 
-        if (nextWave + 1 > waves.Length - 1)
+        if (nextWave + 1 >= waves.Length)
         {
             nextWave = 0;
-            Debug.Log("All Waves Complete! Looping...");
+            EndGame();
         }
         else
         {
+            state = SpawnState.Counting;
             nextWave++;
         }
     }
+
     bool EnemyIsAlive()
     {
         searchCountdown -= Time.deltaTime;
-        if (searchCountdown <= 0)
+
+        if (searchCountdown <= 0f)
         {
             searchCountdown = timeBetweenSearches;
-            if (GameObject.FindGameObjectWithTag(enemyTag) == null)
+
+            // Find all networked mobs by tag
+            GameObject[] enemies = GameObject.FindGameObjectsWithTag(targetTag);
+
+            if (enemies.Length == 0)
                 return false;
         }
+
         return true;
     }
-    IEnumerator SpawnWaves(Wave _wave)
+
+    IEnumerator SpawnWave(Wave wave)
     {
         state = SpawnState.Spawning;
-        Debug.Log("Spawning Wave : " + _wave.id);
-        
 
-        for (int i = 0; i < _wave.count; i++)
+        Debug.Log($"Spawning Wave: {wave.id}");
+
+        for (int i = 0; i < wave.count; i++)
         {
-            SpawnEnemy(_wave.enemy);
-            yield return new WaitForSeconds(1f / _wave.rate); // time between each enemies
+            SpawnEnemy(wave.enemyPrefab);
+            yield return new WaitForSeconds(1f / wave.rate);
         }
 
-        state = SpawnState.Wainting;
-
-        yield break;
+        state = SpawnState.Waiting;
     }
 
-    void SpawnEnemy(GameObject _enemy)
+    void SpawnEnemy(GameObject enemyPrefab)
     {
-        //Spawn Enemy
-        Debug.Log("Spawning Enemy : " + _enemy.name);
-        Instantiate(_enemy, transform.position, transform.rotation);
-        
+        GameObject go = Instantiate(enemyPrefab, transform.position, Quaternion.identity);
+        var netObj = go.GetComponent<NetworkObject>();
+
+        if (netObj != null)
+        {
+            netObj.Spawn(); // This syncs to all clients
+        }
+        else
+        {
+            Debug.LogError("Enemy prefab must have a NetworkObject component!");
+        }
+    }
+    void EndGame()
+    {
+        Debug.Log("Player number : " + PlayerScore.allPlayers.Count);
+        if (PlayerScore.allPlayers.Count >= 2)
+        {
+            var player1 = PlayerScore.allPlayers[0].gameObject;
+            var player2 = PlayerScore.allPlayers[1].gameObject;
+            TriggerGameOver(player1, player2);
+        }
+    }
+
+    public void TriggerGameOver(GameObject player1, GameObject player2)
+    {
+        if (!IsServer) return;
+
+        var score1 = player1.GetComponent<PlayerScore>()?.score.Value ?? 0;
+        var score2 = player2.GetComponent<PlayerScore>()?.score.Value ?? 0;
+
+        ShowFinalScoresClientRpc(score1, score2);
+    }
+
+    [ClientRpc]
+    private void ShowFinalScoresClientRpc(int score1, int score2)
+    {
+        HUD.SetActive(true);
+        player1Text.text = $"Hote Score: {score1}";
+        player2Text.text = $"Client Score: {score2}";
     }
 }

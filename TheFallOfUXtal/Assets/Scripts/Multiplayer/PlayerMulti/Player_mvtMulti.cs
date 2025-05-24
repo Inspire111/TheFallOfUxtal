@@ -2,7 +2,7 @@ using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Player_mvt : MonoBehaviour
+public class Player_mvtMulti : NetworkBehaviour
 {
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
@@ -42,7 +42,7 @@ public class Player_mvt : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         trail = GetComponent<TrailRenderer>();
-
+        moveDirection = new Vector3(0f, 0f, 0f);
         trail.enabled = false;
         if (trail.material == null)
         {
@@ -58,6 +58,7 @@ public class Player_mvt : MonoBehaviour
 
     void Update()
     {
+        if (!IsOwner) return;
         HandleMovementInput();
         HandleDashInput();
         UpdateDashTimers();
@@ -65,6 +66,7 @@ public class Player_mvt : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (!IsOwner) return;
         float speed = isDashing ? dashSpeed : moveSpeed;
         Vector2 velocity = moveDirection.normalized * speed * Time.fixedDeltaTime;
         rb.MovePosition(rb.position + velocity);
