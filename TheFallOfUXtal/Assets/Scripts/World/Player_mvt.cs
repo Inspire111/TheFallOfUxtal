@@ -2,7 +2,7 @@ using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Player_mvt : NetworkBehaviour
+public class Player_mvt : MonoBehaviour
 {
     [Header("Movement Settings")]
     public float moveSpeed = 5f;

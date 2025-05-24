@@ -1,0 +1,792 @@
+fileFormatVersion: 2
+guid: ac3c444fa3fbd5c488b57501e9a97987
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8442678566316862768
+    second: Death_DownRight_0
+  - first:
+      213: 8988957239435862385
+    second: Death_DownRight_1
+  - first:
+      213: -119157924964925770
+    second: Death_DownRight_2
+  - first:
+      213: -1110432972770602636
+    second: Death_DownRight_3
+  - first:
+      213: 4190515294593946378
+    second: Death_DownRight_4
+  - first:
+      213: 2841845846931745787
+    second: Death_DownRight_5
+  - first:
+      213: -405786815545009082
+    second: Death_DownRight_6
+  - first:
+      213: -1808801192678945598
+    second: Death_DownRight_7
+  - first:
+      213: -7975135892920420471
+    second: Death_DownRight_8
+  - first:
+      213: 1792940983625263074
+    second: Death_DownRight_9
+  - first:
+      213: -6410784599439884756
+    second: Death_DownRight_10
+  - first:
+      213: -3117828266076767961
+    second: Death_DownRight_11
+  - first:
+      213: -7014166542465302739
+    second: Death_DownRight_12
+  - first:
+      213: 418916424331220138
+    second: Death_DownRight_13
+  - first:
+      213: -4905011476021637280
+    second: Death_DownRight_14
+  - first:
+      213: -3497875725705428508
+    second: Death_DownRight_15
+  - first:
+      213: -7306173548782409899
+    second: Death_DownRight_16
+  - first:
+      213: -5640083625965193243
+    second: Death_DownRight_17
+  - first:
+      213: 2961014216190917758
+    second: Death_DownRight_18
+  - first:
+      213: 8075367410013791701
+    second: Death_DownRight_19
+  - first:
+      213: -510537802181149623
+    second: Death_DownRight_20
+  - first:
+      213: 6078963670956682085
+    second: Death_DownRight_21
+  - first:
+      213: -551664176869348135
+    second: Death_DownRight_22
+  - first:
+      213: -2430977806611792132
+    second: Death_DownRight_23
+  - first:
+      213: 560884430372132716
+    second: Death_DownRight_24
+  - first:
+      213: 6950576500421004482
+    second: Death_DownRight_25
+  - first:
+      213: -5525787035669779709
+    second: Death_DownRight_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Death_DownRight_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1653
+        width: 60
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d211ed339495da80800000000000000
+      internalID: -8442678566316862768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownRight_1
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1653
+        width: 60
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17120c5dbf03fbc70800000000000000
+      internalID: 8988957239435862385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownRight_2
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1657
+        width: 55
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6befa42af7aa85ef0800000000000000
+      internalID: -119157924964925770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownRight_3
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 1660
+        width: 53
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47190273813f690f0800000000000000
+      internalID: -1110432972770602636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownRight_4
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 1403
+        width: 55
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a031d184573b72a30800000000000000
+      internalID: 4190515294593946378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownRight_5
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 1403
+        width: 53
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfb29c4bdb3407720800000000000000
+      internalID: 2841845846931745787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownRight_6
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 1403
+        width: 53
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64c17ec8a0b5e5af0800000000000000
+      internalID: -405786815545009082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownRight_7
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 1404
+        width: 53
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cc811116e8d5e6e0800000000000000
+      internalID: -1808801192678945598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownRight_8
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 1148
+        width: 53
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 987b203d820a25190800000000000000
+      internalID: -7975135892920420471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownRight_9
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1148
+        width: 52
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e72930435ec1e810800000000000000
+      internalID: 1792940983625263074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownRight_10
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 1148
+        width: 53
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2e37d26f515807a0800000000000000
+      internalID: -6410784599439884756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownRight_11
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 1147
+        width: 52
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72972d106bf3bb4d0800000000000000
+      internalID: -3117828266076767961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownRight_12
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 881
+        width: 51
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2ffce831bca8ae90800000000000000
+      internalID: -7014166542465302739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownRight_13
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 880
+        width: 54
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa4d6d6b44a40d500800000000000000
+      internalID: 418916424331220138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownRight_14
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 880
+        width: 58
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06f0488ec06edebb0800000000000000
+      internalID: -4905011476021637280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownRight_15
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 881
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e1cddc5f8c057fc0800000000000000
+      internalID: -3497875725705428508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownRight_16
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 625
+        width: 61
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 557287dfdd14b9a90800000000000000
+      internalID: -7306173548782409899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownRight_17
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 625
+        width: 63
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e7f8da13d56ab1b0800000000000000
+      internalID: -5640083625965193243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownRight_18
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 624
+        width: 65
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7cf0f2ddb2a71920800000000000000
+      internalID: 2961014216190917758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownRight_19
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 623
+        width: 68
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d563a0dfd7711070800000000000000
+      internalID: 8075367410013791701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownRight_20
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 366
+        width: 74
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94c7598e2943ae8f0800000000000000
+      internalID: -510537802181149623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownRight_21
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 362
+        width: 85
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56ba0e14041dc5450800000000000000
+      internalID: 6078963670956682085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownRight_22
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 350
+        width: 102
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dce46e9a581858f0800000000000000
+      internalID: -551664176869348135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownRight_23
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 338
+        width: 112
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfebb04909e634ed0800000000000000
+      internalID: -2430977806611792132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownRight_24
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 81
+        width: 111
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c67d060fa69a8c700800000000000000
+      internalID: 560884430372132716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownRight_25
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 81
+        width: 113
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cc85cb5088657060800000000000000
+      internalID: 6950576500421004482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownRight_26
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 81
+        width: 113
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30ba17ac7f57053b0800000000000000
+      internalID: -5525787035669779709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
