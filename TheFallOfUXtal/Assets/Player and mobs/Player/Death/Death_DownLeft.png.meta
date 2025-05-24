@@ -1,0 +1,792 @@
+fileFormatVersion: 2
+guid: b773dde357698c248998d5f6c3ff02e4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2157295235379149250
+    second: Death_DownLeft_0
+  - first:
+      213: 4038198558981124442
+    second: Death_DownLeft_1
+  - first:
+      213: -6393072805236694645
+    second: Death_DownLeft_2
+  - first:
+      213: 9068806210389894000
+    second: Death_DownLeft_3
+  - first:
+      213: -1956904604035655647
+    second: Death_DownLeft_4
+  - first:
+      213: -4468379937142280038
+    second: Death_DownLeft_5
+  - first:
+      213: -2170125420678618306
+    second: Death_DownLeft_6
+  - first:
+      213: -3518223492210665786
+    second: Death_DownLeft_7
+  - first:
+      213: 6406265714307237057
+    second: Death_DownLeft_8
+  - first:
+      213: 3197817595269655273
+    second: Death_DownLeft_9
+  - first:
+      213: 2438097585041631406
+    second: Death_DownLeft_10
+  - first:
+      213: -1880930932048065002
+    second: Death_DownLeft_11
+  - first:
+      213: -5304393831415350491
+    second: Death_DownLeft_12
+  - first:
+      213: 7071947560868186589
+    second: Death_DownLeft_13
+  - first:
+      213: 6841158815230307347
+    second: Death_DownLeft_14
+  - first:
+      213: -5285978751869014295
+    second: Death_DownLeft_15
+  - first:
+      213: 406981348495072364
+    second: Death_DownLeft_16
+  - first:
+      213: 8866034147213873106
+    second: Death_DownLeft_17
+  - first:
+      213: -8972820697895692690
+    second: Death_DownLeft_18
+  - first:
+      213: 6331471072434750344
+    second: Death_DownLeft_19
+  - first:
+      213: 8789229703118704246
+    second: Death_DownLeft_20
+  - first:
+      213: 796464897063517738
+    second: Death_DownLeft_21
+  - first:
+      213: 1171418649115423618
+    second: Death_DownLeft_22
+  - first:
+      213: -2283983195912315970
+    second: Death_DownLeft_23
+  - first:
+      213: -5094083049485100287
+    second: Death_DownLeft_24
+  - first:
+      213: -5850461545176281004
+    second: Death_DownLeft_25
+  - first:
+      213: -4317172845697791424
+    second: Death_DownLeft_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Death_DownLeft_0
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1650
+        width: 45
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e36459bc96fbf02e0800000000000000
+      internalID: -2157295235379149250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownLeft_1
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 1650
+        width: 44
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a517090b1309a0830800000000000000
+      internalID: 4038198558981124442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownLeft_2
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 1652
+        width: 52
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8128a4d72e3747a0800000000000000
+      internalID: -6393072805236694645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownLeft_3
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 1653
+        width: 65
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0736523233fdadd70800000000000000
+      internalID: 9068806210389894000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownLeft_4
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1397
+        width: 63
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 128d02971ada7d4e0800000000000000
+      internalID: -1956904604035655647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownLeft_5
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1397
+        width: 62
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a90f6252f102df1c0800000000000000
+      internalID: -4468379937142280038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownLeft_6
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 1397
+        width: 60
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e33e76e7d6a22e1e0800000000000000
+      internalID: -2170125420678618306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownLeft_7
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 1397
+        width: 58
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c6595acf52cc2fc0800000000000000
+      internalID: -3518223492210665786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownLeft_8
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 1141
+        width: 56
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c40c0ea9b0a7e850800000000000000
+      internalID: 6406265714307237057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownLeft_9
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 1141
+        width: 53
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eaaa8ef82ee06c20800000000000000
+      internalID: 3197817595269655273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownLeft_10
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 1141
+        width: 49
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea8e42406dcd5d120800000000000000
+      internalID: 2438097585041631406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownLeft_11
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 1142
+        width: 46
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61e0b3c684795e5e0800000000000000
+      internalID: -1880930932048065002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownLeft_12
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 885
+        width: 42
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52bf6b90ae10366b0800000000000000
+      internalID: -5304393831415350491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownLeft_13
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 880
+        width: 47
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd90dbb76da942260800000000000000
+      internalID: 7071947560868186589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownLeft_14
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 878
+        width: 53
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31ca5d942bda0fe50800000000000000
+      internalID: 6841158815230307347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownLeft_15
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 879
+        width: 58
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eea59cd45e64a6b0800000000000000
+      internalID: -5285978751869014295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownLeft_16
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 623
+        width: 59
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6c12435163e5a500800000000000000
+      internalID: 406981348495072364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownLeft_17
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 623
+        width: 59
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2df8a27251b7a0b70800000000000000
+      internalID: 8866034147213873106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownLeft_18
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 622
+        width: 61
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6697a48d132a7380800000000000000
+      internalID: -8972820697895692690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownLeft_19
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 622
+        width: 66
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88382221567edd750800000000000000
+      internalID: 6331471072434750344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownLeft_20
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 366
+        width: 72
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67ec3bff8dd99f970800000000000000
+      internalID: 8789229703118704246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownLeft_21
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 367
+        width: 78
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2ef981aa9c9d0b00800000000000000
+      internalID: 796464897063517738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownLeft_22
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 352
+        width: 87
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 283facf0e07b14010800000000000000
+      internalID: 1171418649115423618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownLeft_23
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 341
+        width: 98
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebb5fa66269ad40e0800000000000000
+      internalID: -2283983195912315970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownLeft_24
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 82
+        width: 100
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10b1a13c47e2e49b0800000000000000
+      internalID: -5094083049485100287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownLeft_25
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 78
+        width: 102
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4505fa3c83cfecea0800000000000000
+      internalID: -5850461545176281004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_DownLeft_26
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 76
+        width: 104
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04a88329b225614c0800000000000000
+      internalID: -4317172845697791424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
