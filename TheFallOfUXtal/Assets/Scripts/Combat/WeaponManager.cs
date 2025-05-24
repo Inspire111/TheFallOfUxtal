@@ -61,7 +61,7 @@ public class WeaponManager : MonoBehaviour
             UpdateWeaponScripts();
         }
     }
-
+    
     void UpdateWeaponScripts()
     {
         meleeAttack.enabled = (stats.currentWeapon == WeaponType.Melee);
@@ -69,5 +69,6 @@ public class WeaponManager : MonoBehaviour
         bowAttack.enabled = (stats.currentWeapon == WeaponType.Bow);
         stats.UpdateAllStatsText();
     }
+    
 }
 
