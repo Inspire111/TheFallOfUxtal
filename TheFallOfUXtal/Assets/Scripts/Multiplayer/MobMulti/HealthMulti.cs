@@ -13,11 +13,11 @@ public class MobHealthMulti : NetworkBehaviour
 
     public void TakeDamage(float amount, GameObject player)
     {
-        GameObject attacker = player;
+        Debug.Log("Is taking damage");
         if (!isDead) return;
 
         Health -= amount;
-        lastAttacker = attacker;
+        lastAttacker = player;
 
         if (Health <= 0 && !isDead)
         {

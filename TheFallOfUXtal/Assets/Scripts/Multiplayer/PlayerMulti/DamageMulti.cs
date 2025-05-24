@@ -42,8 +42,10 @@ public class MeleeHitboxMulti : MonoBehaviour
         Debug.Log("Hitbox triggered with: " + other.name);
 
         MobHealthMulti mob = other.GetComponentInParent<MobHealthMulti>();
+        Debug.Log("mobHealth unfindable : " + mob is null);
         if (mob != null)
         {
+
             mob.TakeDamage(damage, player);
             Debug.Log("Applied damage to " + other.name);
         }
