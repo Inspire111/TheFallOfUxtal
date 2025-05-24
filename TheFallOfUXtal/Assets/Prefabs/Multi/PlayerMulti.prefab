@@ -433,7 +433,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 20
   activeTime: 0.1
-  player: {fileID: 6960210970573033755}
+  player: {fileID: 3749396503038745644}
 --- !u!1 &1475766110928750069
 GameObject:
   m_ObjectHideFlags: 0
@@ -2433,7 +2433,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 20
   activeTime: 0.1
-  player: {fileID: 6960210970573033755}
+  player: {fileID: 3749396503038745644}
 --- !u!1 &6362424788827486225
 GameObject:
   m_ObjectHideFlags: 0
@@ -3446,7 +3446,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 20
   activeTime: 0.1
-  player: {fileID: 6960210970573033755}
+  player: {fileID: 3749396503038745644}
 --- !u!1 &7048062594044575722
 GameObject:
   m_ObjectHideFlags: 0
@@ -3752,7 +3752,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 20
   activeTime: 0.1
-  player: {fileID: 6960210970573033755}
+  player: {fileID: 3749396503038745644}
 --- !u!1 &7432913645150386188
 GameObject:
   m_ObjectHideFlags: 0

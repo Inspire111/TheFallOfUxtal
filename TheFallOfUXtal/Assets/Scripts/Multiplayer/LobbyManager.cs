@@ -11,7 +11,7 @@ using Unity.Netcode;
 using UnityEngine.SceneManagement;
 
 
-public class LobbyManager : MonoBehaviour
+public class LobbyManager : NetworkBehaviour
 {
     public static LobbyManager Instance { get; private set; }
 
@@ -47,7 +47,7 @@ public class LobbyManager : MonoBehaviour
                 { "Name", new PlayerDataObject(PlayerDataObject.VisibilityOptions.Public, playerName) }
             });
 
-        LobbyUIManager.Instance.ShowLobbyList(true);
+        LobbyUIManager.Instance.ShowLobbyList();
         ShowLobbies();
     }
 
@@ -135,7 +135,7 @@ public class LobbyManager : MonoBehaviour
 
                     LobbyUIManager.Instance.ClearAllLobbyUI();
                     await Task.Delay(2000);
-                    NetworkManager.Singleton.SceneManager.LoadScene("Multi",LoadSceneMode.Single);
+                    NetworkManager.Singleton.SceneManager.LoadScene("Multi", LoadSceneMode.Single);
                 }
                 catch (System.Exception ex)
                 {
@@ -150,8 +150,8 @@ public class LobbyManager : MonoBehaviour
             var players = new List<(string, string)>();
             foreach (Player player in lobby.Players)
             {
-                string name = player.Data.ContainsKey("Name") ? player.Data["Name"].Value : "Unnamed";
-                string role = lobby.HostId == player.Id ? "Owner" : "User";
+                string name = player.Data.ContainsKey("Name") ? player.Data["Name"].Value : "Anonyme";
+                string role = lobby.HostId == player.Id ? "Hote" : "Client";
                 players.Add((name, role));
             }
 
@@ -176,7 +176,9 @@ public class LobbyManager : MonoBehaviour
         });
 
         await Task.Delay(1500);
-        
-        NetworkManager.Singleton.SceneManager.LoadScene("Multi",LoadSceneMode.Single);
+
+        NetworkManager.Singleton.SceneManager.LoadScene("Multi", LoadSceneMode.Single);
     }
+
+    
 }

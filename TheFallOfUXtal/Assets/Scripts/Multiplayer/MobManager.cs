@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using Unity.Netcode;
+using UnityEngine.SceneManagement;
 
 public class MobManager : NetworkBehaviour
 {
@@ -32,12 +33,15 @@ public class MobManager : NetworkBehaviour
     public TMPro.TextMeshProUGUI player1Text;
     public TMPro.TextMeshProUGUI player2Text;
 
+    public Transform[] SpawnPoints;
+    
 
     private void Start()
     {
         if (!IsServer) enabled = false; // Only run on server
 
         waveCountdown = timeBetweenWaves;
+        HUD.SetActive(false);
     }
 
     private void Update()
@@ -123,7 +127,9 @@ public class MobManager : NetworkBehaviour
 
     void SpawnEnemy(GameObject enemyPrefab)
     {
-        GameObject go = Instantiate(enemyPrefab, transform.position, Quaternion.identity);
+
+        int spawnIndex = Random.Range(0, SpawnPoints.Length - 1);
+        GameObject go = Instantiate(enemyPrefab, SpawnPoints[spawnIndex].position, Quaternion.identity);
         var netObj = go.GetComponent<NetworkObject>();
 
         if (netObj != null)
@@ -162,5 +168,22 @@ public class MobManager : NetworkBehaviour
         HUD.SetActive(true);
         player1Text.text = $"Hote Score: {score1}";
         player2Text.text = $"Client Score: {score2}";
+    }
+
+    public void GoToMenu()
+    {
+        if (NetworkManager.Singleton.IsHost)
+        {
+            NetworkManager.Singleton.Shutdown(); // Stops server and disconnects clients
+            NetworkManager.Singleton.Shutdown(); // End connection
+            SceneManager.LoadScene("Menu");
+        }
+        else if (NetworkManager.Singleton.IsClient)
+        {
+            NetworkManager.Singleton.Shutdown(); // Disconnects from server
+            NetworkManager.Singleton.Shutdown(); // End connection
+            SceneManager.LoadScene("Menu");
+        }
+        
     }
 }

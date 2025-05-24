@@ -36,11 +36,11 @@ public class LobbyUIManager : MonoBehaviour
     public string GetPlayerName() => profileNameField.text;
     public string GetLobbyName() => createLobbyNameField.text;
 
-    public void ShowLobbyList(bool show)
+    public void ShowLobbyList()
     {
-        lobbyListParent.SetActive(show);
-        lobbyCreationParent.SetActive(!show);
-        profileSetupParent.SetActive(!show);
+        lobbyListParent.SetActive(true);
+        lobbyCreationParent.SetActive(false);
+        profileSetupParent.SetActive(false);
     }
 
     public void ShowJoinedLobby(bool show)

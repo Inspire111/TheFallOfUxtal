@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class MobHealthMulti : NetworkBehaviour
 {
-    public float health = 100f;
+    public float Health = 100f;
 
     private bool isDead = false;
     private Rigidbody2D rb;
@@ -11,17 +11,20 @@ public class MobHealthMulti : NetworkBehaviour
 
     private GameObject lastAttacker; // Track the last player that hit this mob
 
-    public void TakeDamage(float amount, GameObject attacker)
+    public void TakeDamage(float amount, GameObject player)
     {
-        if (!IsServer) return;
+        GameObject attacker = player;
+        if (!isDead) return;
 
-        health -= amount;
+        Health -= amount;
         lastAttacker = attacker;
 
-        if (health <= 0 && !isDead)
+        if (Health <= 0 && !isDead)
         {
             Die();
         }
+       
+        
     }
 
     void Start()
@@ -30,12 +33,13 @@ public class MobHealthMulti : NetworkBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    
+
 
     void Die()
     {
         isDead = true;
         AwardScoreTo(lastAttacker); // Only done on server
+        AwardHeal(lastAttacker);
         Destroy(gameObject);
     }
 
@@ -52,5 +56,17 @@ public class MobHealthMulti : NetworkBehaviour
             scoreComp.AddScore(1); // Add reward
         }
     }
+
+    public void AwardHeal(GameObject killer)
+    {
+        if (!IsServer) return;
+
+        var playerStat = killer.GetComponent<PlayerStatsMulti>();
+        if (playerStat != null)
+        {
+            playerStat.Heal(20); // Add reward
+        }
+    }
+    
 
 }
