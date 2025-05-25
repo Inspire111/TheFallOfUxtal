@@ -1,6 +1,34 @@
 using UnityEngine;
+using UnityEngine.LowLevel;
 
-public class Shop : MonoBehaviour
+public class ShopTile : MonoBehaviour
 {
-    public string Name { get; set; }
+    private bool playerInRange = false;
+    private PlayerShop playerShop;
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerInRange = true;
+            playerShop = other.GetComponent<PlayerShop>();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerInRange = false;
+        }
+    }
+
+    private void Update()
+    {
+        if (playerInRange && playerShop != null && !playerShop.IsShopOpen() &&
+            playerShop.GetInputActions().Player.Interact.WasPressedThisFrame())
+        {
+            playerShop.OpenShop();
+        }
+    }
 }

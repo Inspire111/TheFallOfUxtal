@@ -20,6 +20,16 @@ public class PlayerStats : MonoBehaviour
     public int maxShield = 30;
     public int currentShield;
 
+    [Header("Energy Stats")]
+    public int maxEnergy = 30;
+    public int currentEnergy;
+
+    [Header("Gold Amount")]
+    public int Gold = 0;
+
+    [Header("Energy Regeneration")]
+    public float energyRegenRate = 5f;
+
     [Header("Weapons Owned")]
     public bool hasMelee = true;
     public bool hasSpear = true;
@@ -38,6 +48,7 @@ public class PlayerStats : MonoBehaviour
     public TextMeshProUGUI shieldText;
     public TextMeshProUGUI shieldLeft;
     public TextMeshProUGUI healLeft;
+    public TextMeshProUGUI goldLeft;
 
     public Image swordBackground;
     public Image spearBackground;
@@ -49,11 +60,37 @@ public class PlayerStats : MonoBehaviour
 
     [HideInInspector] public bool usingHealPotion = true;
 
+    private float energyAccumulator = 0f;
+
     void Start()
     {
         currentHealth = maxHealth;
         currentShield = maxShield;
+        currentEnergy = maxEnergy;
         UpdateAllStatsText();
+    }
+
+    void Update()
+    {
+        RegenerateEnergy();
+    }
+
+    private void RegenerateEnergy()
+    {
+        if (currentEnergy < maxEnergy)
+        {
+            energyAccumulator += energyRegenRate * Time.deltaTime;
+
+            if (energyAccumulator >= 1f)
+            {
+                int energyToAdd = Mathf.FloorToInt(energyAccumulator);
+                currentEnergy += energyToAdd;
+                currentEnergy = Mathf.Clamp(currentEnergy, 0, maxEnergy);
+                energyAccumulator -= energyToAdd;
+
+                UpdateAllStatsText();
+            }
+        }
     }
 
     public void TakeDamage(int damage)
@@ -84,23 +121,35 @@ public class PlayerStats : MonoBehaviour
         UpdateAllStatsText();
     }
 
+    public void AddGold(int amount)
+    {
+        Gold += amount;
+        UpdateAllStatsText();
+    }
+
     public void UpdateAllStatsText()
     {
         if (hpText != null)
             hpText.text = currentHealth + " / " + maxHealth;
         if (shieldText != null)
             shieldText.text = currentShield + " / " + maxShield;
+        if (energyText != null)
+            energyText.text = currentEnergy + " / " + maxEnergy;
         if (shieldLeft != null)
-            shieldLeft.text = $"{ShieldPotions}";
+            shieldLeft.text = ShieldPotions.ToString();
         if (healLeft != null)
-            healLeft.text = $"{HealPotions}";
+            healLeft.text = HealPotions.ToString();
+        if (goldLeft != null)
+            goldLeft.text = Gold.ToString();
 
         if (swordBackground != null)
             swordBackground.color = Color.white;
+
         if (spearBackground != null)
-            spearBackground.color = Color.white;
+            spearBackground.color = hasSpear ? Color.white : Color.red;
+
         if (bowBackground != null)
-            bowBackground.color = Color.white;
+            bowBackground.color = hasBow ? Color.white : Color.red;
 
         if (healPotionImage != null)
             healPotionImage.gameObject.SetActive(false);
@@ -110,14 +159,20 @@ public class PlayerStats : MonoBehaviour
         switch (currentWeapon)
         {
             case WeaponType.Melee:
-                if (swordBackground != null) swordBackground.color = Color.green;
+                if (swordBackground != null)
+                    swordBackground.color = Color.green;
                 break;
+
             case WeaponType.Spear:
-                if (spearBackground != null) spearBackground.color = Color.green;
+                if (spearBackground != null)
+                    spearBackground.color = hasSpear ? Color.green : Color.red;
                 break;
+
             case WeaponType.Bow:
-                if (bowBackground != null) bowBackground.color = Color.green;
+                if (bowBackground != null)
+                    bowBackground.color = hasBow ? Color.green : Color.red;
                 break;
+
             case WeaponType.Potions:
                 if (healPotionImage != null)
                     healPotionImage.gameObject.SetActive(usingHealPotion);
@@ -127,3 +182,4 @@ public class PlayerStats : MonoBehaviour
         }
     }
 }
+

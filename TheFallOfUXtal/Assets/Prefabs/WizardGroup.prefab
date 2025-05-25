@@ -398,6 +398,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  coinPrefab: {fileID: 3208552910650628664, guid: 23cfa8222443c24439db8c2e8aea0f54, type: 3}
+  coinCount: 4
+  coinExplosionForce: 5
+  coinSpreadRadius: 0.6
 --- !u!114 &7412737396773314104
 MonoBehaviour:
   m_ObjectHideFlags: 0

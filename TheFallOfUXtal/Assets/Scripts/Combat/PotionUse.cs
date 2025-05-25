@@ -11,34 +11,56 @@ public class PotionUser : MonoBehaviour
         stats = GetComponent<PlayerStats>();
         movement = GetComponent<Player_mvt>();
         inputActions = movement.GetInputActions();
-
-        inputActions.Enable();
     }
 
+    void OnEnable()
+    {
+        if (inputActions == null)
+        {
+            movement = GetComponent<Player_mvt>();
+            inputActions = movement.GetInputActions();
+        }
+    }
 
     void Update()
     {
-        if (stats.currentWeapon != WeaponType.Potions)
-            return;
+        if (stats.currentWeapon != WeaponType.Potions) return;
 
         if (inputActions.Player.Attack.WasPressedThisFrame())
         {
-            Debug.Log("Potion use attempt");
+            TryUsePotion();
+        }
+    }
 
-            if (stats.usingHealPotion && stats.HealPotions > 0)
+    void TryUsePotion()
+    {
+        if (stats.usingHealPotion)
+        {
+            if (stats.HealPotions > 0)
             {
-                Debug.Log("Using heal potion");
                 stats.Heal(20);
                 stats.HealPotions--;
+                Debug.Log("Used Heal Potion.");
             }
-            else if (!stats.usingHealPotion && stats.ShieldPotions > 0)
+            else
             {
-                Debug.Log("Using shield potion");
+                Debug.Log("No Heal Potions left!");
+            }
+        }
+        else
+        {
+            if (stats.ShieldPotions > 0)
+            {
                 stats.GainShield(25);
                 stats.ShieldPotions--;
+                Debug.Log("Used Shield Potion.");
             }
-
-            stats.UpdateAllStatsText();
+            else
+            {
+                Debug.Log("No Shield Potions left!");
+            }
         }
+
+        stats.UpdateAllStatsText();
     }
 }
