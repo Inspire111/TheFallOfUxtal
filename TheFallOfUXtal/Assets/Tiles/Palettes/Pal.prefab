@@ -82,6 +82,7 @@ Transform:
   - {fileID: 5861240127296426395}
   - {fileID: 5683267370589939298}
   - {fileID: 3675171147734393883}
+  - {fileID: 3557687662951941062}
   - {fileID: 572031130197286155}
   - {fileID: 3708901541764250227}
   - {fileID: 768450612993420460}
@@ -552,6 +553,92 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4210944723490687880, guid: 7e05b61046dfe1840801eb9b7c69f7c4, type: 3}
   m_PrefabInstance: {fileID: 680205470460211091}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &805922223905671246
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8979587653176936382}
+    m_Modifications:
+    - target: {fileID: 346107541959038890, guid: 7e05b61046dfe1840801eb9b7c69f7c4, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 346107541959038890, guid: 7e05b61046dfe1840801eb9b7c69f7c4, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 346107541959038890, guid: 7e05b61046dfe1840801eb9b7c69f7c4, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 346107541959038890, guid: 7e05b61046dfe1840801eb9b7c69f7c4, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 346107541959038890, guid: 7e05b61046dfe1840801eb9b7c69f7c4, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 346107541959038890, guid: 7e05b61046dfe1840801eb9b7c69f7c4, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4210944723490687880, guid: 7e05b61046dfe1840801eb9b7c69f7c4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4210944723490687880, guid: 7e05b61046dfe1840801eb9b7c69f7c4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4210944723490687880, guid: 7e05b61046dfe1840801eb9b7c69f7c4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4210944723490687880, guid: 7e05b61046dfe1840801eb9b7c69f7c4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4210944723490687880, guid: 7e05b61046dfe1840801eb9b7c69f7c4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4210944723490687880, guid: 7e05b61046dfe1840801eb9b7c69f7c4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4210944723490687880, guid: 7e05b61046dfe1840801eb9b7c69f7c4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4210944723490687880, guid: 7e05b61046dfe1840801eb9b7c69f7c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4210944723490687880, guid: 7e05b61046dfe1840801eb9b7c69f7c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4210944723490687880, guid: 7e05b61046dfe1840801eb9b7c69f7c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738149596976922899, guid: 7e05b61046dfe1840801eb9b7c69f7c4, type: 3}
+      propertyPath: m_Name
+      value: Isometric Diamond 5 (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7e05b61046dfe1840801eb9b7c69f7c4, type: 3}
+--- !u!4 &3557687662951941062 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4210944723490687880, guid: 7e05b61046dfe1840801eb9b7c69f7c4, type: 3}
+  m_PrefabInstance: {fileID: 805922223905671246}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1753538957915776483
 PrefabInstance:
@@ -1253,6 +1340,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8979587653176936382}
     m_Modifications:
+    - target: {fileID: 346107541959038890, guid: 92efa4ff988a4ec4fa4c95f2b3b20cd0, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 346107541959038890, guid: 92efa4ff988a4ec4fa4c95f2b3b20cd0, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 346107541959038890, guid: 92efa4ff988a4ec4fa4c95f2b3b20cd0, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 346107541959038890, guid: 92efa4ff988a4ec4fa4c95f2b3b20cd0, type: 3}
       propertyPath: m_DynamicOccludee
       value: 0
