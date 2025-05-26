@@ -1,22 +1,31 @@
 using UnityEngine;
 
-public class PlayMusicZone : MonoBehaviour
+public class MusicZoneVolumeControl : MonoBehaviour
 {
-    private AudioSource audioSource;
+    [SerializeField] private AudioSource backgroundMusic;
+    [SerializeField] private AudioClip zoneClip;
+
+    private AudioSource zoneAudioSource;
 
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        zoneAudioSource = GetComponent<AudioSource>();
+        zoneAudioSource.playOnAwake = false;
+        zoneAudioSource.loop = true;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (!other.CompareTag("Player")) return;
+
+        if (backgroundMusic != null)
+            backgroundMusic.volume = 0f;
+
+        if (zoneClip != null)
         {
-            if (!audioSource.isPlaying)
-            {
-                audioSource.Play();
-            }
+            zoneAudioSource.clip = zoneClip;
+            zoneAudioSource.Play();
         }
     }
+
 }
