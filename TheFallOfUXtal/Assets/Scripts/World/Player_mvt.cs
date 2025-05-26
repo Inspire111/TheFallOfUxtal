@@ -23,6 +23,8 @@ public class Player_mvt : MonoBehaviour
     private float dashCooldownRemaining;
     private bool isDashing;
 
+    public bool canMove = true;
+
     private void Awake()
     {
         inputActions = new InputSystem_Actions();
@@ -58,6 +60,12 @@ public class Player_mvt : MonoBehaviour
 
     void Update()
     {
+        if (!canMove || (DialogueSystem.instance != null && DialogueSystem.instance.isDialogueActive))
+        {
+            moveDirection = Vector3.zero;
+            return;
+        }
+
         HandleMovementInput();
         HandleDashInput();
         UpdateDashTimers();
@@ -65,6 +73,9 @@ public class Player_mvt : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (!canMove || (DialogueSystem.instance != null && DialogueSystem.instance.isDialogueActive))
+            return;
+
         float speed = isDashing ? dashSpeed : moveSpeed;
         Vector2 velocity = moveDirection.normalized * speed * Time.fixedDeltaTime;
         rb.MovePosition(rb.position + velocity);
@@ -73,7 +84,6 @@ public class Player_mvt : MonoBehaviour
     void HandleMovementInput()
     {
         Vector2 input = inputActions.Player.Move.ReadValue<Vector2>();
-
         moveDirection = new Vector3(input.x, input.y, 0f);
 
         if (moveDirection != Vector3.zero)
@@ -82,12 +92,21 @@ public class Player_mvt : MonoBehaviour
 
     void HandleDashInput()
     {
-        if (inputActions.Player.Sprint.WasPressedThisFrame() && dashCooldownRemaining <= 0f && moveDirection != Vector3.zero)
+        PlayerStats stats = GetComponent<PlayerStats>();
+
+        if (inputActions.Player.Sprint.WasPressedThisFrame() &&
+            dashCooldownRemaining <= 0f &&
+            moveDirection != Vector3.zero &&
+            stats.currentEnergy >= 30)
         {
             isDashing = true;
             dashTimeRemaining = dashDuration;
             dashCooldownRemaining = dashCooldown;
             trail.enabled = true;
+
+            stats.currentEnergy -= 30;
+            stats.currentEnergy = Mathf.Clamp(stats.currentEnergy, 0, stats.maxEnergy);
+            stats.UpdateAllStatsText();
         }
     }
 
@@ -117,5 +136,10 @@ public class Player_mvt : MonoBehaviour
     public InputSystem_Actions GetInputActions()
     {
         return inputActions;
+    }
+
+    public void SetMovementEnabled(bool enabled)
+    {
+        canMove = enabled;
     }
 }

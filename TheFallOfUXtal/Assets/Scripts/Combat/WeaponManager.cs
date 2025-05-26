@@ -6,6 +6,7 @@ public class WeaponManager : MonoBehaviour
     private DirectionalMeleeAttack meleeAttack;
     private SpearAttack spearAttack;
     private BowAttack bowAttack;
+    private PotionUser potionUser;
     private Player_mvt playerMovement;
     private InputSystem_Actions inputActions;
 
@@ -15,6 +16,7 @@ public class WeaponManager : MonoBehaviour
         meleeAttack = GetComponent<DirectionalMeleeAttack>();
         spearAttack = GetComponent<SpearAttack>();
         bowAttack = GetComponent<BowAttack>();
+        potionUser = GetComponent<PotionUser>();
         playerMovement = GetComponent<Player_mvt>();
         inputActions = playerMovement.GetInputActions();
         UpdateWeaponScripts();
@@ -28,22 +30,16 @@ public class WeaponManager : MonoBehaviour
             UpdateWeaponScripts();
         }
 
-        if (inputActions.Player.SpearSelect.WasPressedThisFrame())
+        if (inputActions.Player.SpearSelect.WasPressedThisFrame() && stats.hasSpear)
         {
-            if (stats.hasSpear)
-            {
-                stats.currentWeapon = WeaponType.Spear;
-                UpdateWeaponScripts();
-            }
+            stats.currentWeapon = WeaponType.Spear;
+            UpdateWeaponScripts();
         }
 
-        if (inputActions.Player.BowSelect.WasPressedThisFrame())
+        if (inputActions.Player.BowSelect.WasPressedThisFrame() && stats.hasBow)
         {
-            if (stats.hasBow)
-            {
-                stats.currentWeapon = WeaponType.Bow;
-                UpdateWeaponScripts();
-            }
+            stats.currentWeapon = WeaponType.Bow;
+            UpdateWeaponScripts();
         }
 
         if (inputActions.Player.PotionSelect.WasPressedThisFrame())
@@ -61,14 +57,31 @@ public class WeaponManager : MonoBehaviour
             UpdateWeaponScripts();
         }
     }
-    
+
     void UpdateWeaponScripts()
     {
+        bool isPotion = stats.currentWeapon == WeaponType.Potions;
+
         meleeAttack.enabled = (stats.currentWeapon == WeaponType.Melee);
         spearAttack.enabled = (stats.currentWeapon == WeaponType.Spear);
         bowAttack.enabled = (stats.currentWeapon == WeaponType.Bow);
+        potionUser.enabled = isPotion;
+
+        ResetCooldowns();
+
         stats.UpdateAllStatsText();
     }
-    
-}
 
+    void ResetCooldowns()
+    {
+        if (meleeAttack != null)
+        {
+            meleeAttack.ResetCooldown();
+        }
+
+        if (spearAttack != null)
+        {
+            spearAttack.ResetCooldown();
+        }
+    }
+}

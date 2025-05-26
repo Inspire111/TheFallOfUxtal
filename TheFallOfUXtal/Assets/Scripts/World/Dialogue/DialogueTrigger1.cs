@@ -9,10 +9,39 @@ public class NPCInteract : MonoBehaviour
     [TextArea(3, 10)] public List<string> repeatInteraction;
 
     private bool hasTalked = false;
+    private InputSystem_Actions inputActions;
+    private bool playerInRange = false;
 
-    private void OnTriggerStay2D(Collider2D other)
+    private void Awake()
     {
-        if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.E) && !DialogueSystem.instance.isDialogueActive)
+        inputActions = new InputSystem_Actions();
+    }
+
+    private void OnEnable()
+    {
+        inputActions.Enable();
+    }
+
+    private void OnDisable()
+    {
+        inputActions.Disable();
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+            playerInRange = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+            playerInRange = false;
+    }
+
+    private void Update()
+    {
+        if (playerInRange && inputActions.Player.Interact.WasPressedThisFrame() && !DialogueSystem.instance.isDialogueActive)
         {
             StartConversation();
         }
@@ -38,4 +67,5 @@ public class NPCInteract : MonoBehaviour
         string randomLine = options[Random.Range(0, options.Count)];
         return new List<string> { randomLine };
     }
+
 }

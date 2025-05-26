@@ -77,4 +77,11 @@ public class DirectionalMeleeAttack : MonoBehaviour
 
         return "Down";
     }
+
+    // New method to reset cooldown
+    public void ResetCooldown()
+    {
+        cooldownTimer = 0f;
+    }
+
 }
