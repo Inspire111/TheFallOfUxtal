@@ -2664,7 +2664,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6722599783925912369, guid: b5ebbda0ef628374b9b70b8a9022cc4e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -6.921997
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7185371075006215510, guid: b5ebbda0ef628374b9b70b8a9022cc4e, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2736,11 +2736,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8543270210851427683, guid: b5ebbda0ef628374b9b70b8a9022cc4e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 303.98
+      value: 362.7
       objectReference: {fileID: 0}
     - target: {fileID: 8543270210851427683, guid: b5ebbda0ef628374b9b70b8a9022cc4e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 236
+      value: 191.7
       objectReference: {fileID: 0}
     - target: {fileID: 9196343597806724810, guid: b5ebbda0ef628374b9b70b8a9022cc4e, type: 3}
       propertyPath: m_AnchorMax.x
@@ -3283,7 +3283,7 @@ GameObject:
   - component: {fileID: 1909006391}
   - component: {fileID: 1909006390}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: CanvasSettings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
