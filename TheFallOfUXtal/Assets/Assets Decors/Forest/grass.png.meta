@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 3943c92e85d61074e9027a6f60505e97
+guid: ef2ffca8cfbfa8c41af2e9fc30f29006
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8258476206894064395
-    second: SA0200026_LightGrass9_0
+      213: 7932798033344189819
+    second: grass_0
+  - first:
+      213: 917857947829267716
+    second: grass_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,7 +100,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -113,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SA0200026_LightGrass9_0
+      name: grass_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 821
-        height: 479
+        y: 252
+        width: 7
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5fc501625aff36d80800000000000000
-      internalID: -8258476206894064395
+      spriteID: b75d56418c5f61e60800000000000000
+      internalID: 7932798033344189819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2
+        width: 814
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40de1a6c0f2ecbc00800000000000000
+      internalID: 917857947829267716
       vertices: []
       indices: 
       edges: []
@@ -147,8 +172,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      SA0200026_LightGrass9_0: -8258476206894064395
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
