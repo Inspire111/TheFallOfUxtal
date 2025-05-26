@@ -18,6 +18,7 @@ public class DirectionalMeleeAttack : MonoBehaviour
     private float cooldownTimer;
     private Player_mvt playerMovement;
     private InputSystem_Actions inputActions;
+    private PlayerAnimatorController animatorController;
 
     private Dictionary<string, GameObject> hitboxes;
 
@@ -25,6 +26,7 @@ public class DirectionalMeleeAttack : MonoBehaviour
     {
         playerMovement = GetComponent<Player_mvt>();
         inputActions = playerMovement.GetInputActions();
+        animatorController = GetComponentInChildren<PlayerAnimatorController>();
 
         hitboxes = new Dictionary<string, GameObject>
         {
@@ -53,7 +55,14 @@ public class DirectionalMeleeAttack : MonoBehaviour
     void PerformAttack()
     {
         Vector3 dir = playerMovement.GetLastMoveDirection().normalized;
-        if (dir == Vector3.zero) return;
+
+        // Si aucune direction de mouvement, utiliser la dernière direction connue
+        if (dir == Vector3.zero)
+        {
+            dir = animatorController.GetLastMoveDirection();
+        }
+
+        animatorController.PlayAttackAnimation(dir);
 
         string directionName = GetDirectionNameFromVector(dir);
 
