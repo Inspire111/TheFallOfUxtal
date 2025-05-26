@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3943c92e85d61074e9027a6f60505e97
+guid: 41d4d880f17265f468899b46dcfaa014
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8258476206894064395
-    second: SA0200026_LightGrass9_0
+      213: -3534919698671299974
+    second: chair_no_bg_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,7 +97,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SA0200026_LightGrass9_0
+      name: chair_no_bg_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 821
-        height: 479
+        x: 296
+        y: 127
+        width: 388
+        height: 726
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5fc501625aff36d80800000000000000
-      internalID: -8258476206894064395
+      spriteID: a729a2b434171fec0800000000000000
+      internalID: -3534919698671299974
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      SA0200026_LightGrass9_0: -8258476206894064395
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
