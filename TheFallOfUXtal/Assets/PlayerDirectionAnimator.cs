@@ -4,6 +4,7 @@ public class PlayerDirectionAnimator : MonoBehaviour
 {
     private Animator animator;
     private Player_mvt playerMovement;
+    private PlayerAnimatorController animatorController;
 
     private Vector2 lastMoveDirection = Vector2.down;
     private float movementThreshold = 0.1f;
@@ -12,6 +13,7 @@ public class PlayerDirectionAnimator : MonoBehaviour
     {
         playerMovement = GetComponent<Player_mvt>();
         animator = GetComponentInChildren<Animator>();
+        animatorController = GetComponentInChildren<PlayerAnimatorController>();
     }
 
     void Update()
@@ -20,7 +22,6 @@ public class PlayerDirectionAnimator : MonoBehaviour
 
         bool isMoving = currentInput.magnitude > movementThreshold;
 
-        // Si le joueur bouge, on met à jour la direction avec une direction "quantifiée"
         if (isMoving)
         {
             Vector2 rawInput = currentInput.normalized;
@@ -34,9 +35,14 @@ public class PlayerDirectionAnimator : MonoBehaviour
             lastMoveDirection = quantizedDir;
         }
 
-        // Animation parameters
         animator.SetBool("IsMoving", isMoving);
         animator.SetFloat("LastX", lastMoveDirection.x);
         animator.SetFloat("LastY", lastMoveDirection.y);
+
+        // Met à jour la dernière direction connue dans PlayerAnimatorController
+        if (animatorController != null)
+        {
+            animatorController.UpdateLastDirection(lastMoveDirection);
+        }
     }
 }
