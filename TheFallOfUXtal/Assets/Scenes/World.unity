@@ -3950,7 +3950,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5402411782391686167, guid: c794586a7f1f0f7439184f85304b4539, type: 3}
       propertyPath: npcName
-      value: Hermite
+      value: Ermite
       objectReference: {fileID: 0}
     - target: {fileID: 5402411782391686167, guid: c794586a7f1f0f7439184f85304b4539, type: 3}
       propertyPath: firstInteraction.Array.size
@@ -4234,7 +4234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f807d07771b19749be361cd0786ae17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcName: Hermite
+  npcName: Ermite
   firstInteraction:
   - "Suis ton c\u0153ur, il conna\xEEt la route, m\xEAme quand les yeux ne la voient
     pas."
