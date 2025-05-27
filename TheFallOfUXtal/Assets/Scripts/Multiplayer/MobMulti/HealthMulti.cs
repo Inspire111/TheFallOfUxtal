@@ -21,7 +21,7 @@ public class MobHealthMulti : NetworkBehaviour
         }
         Health -= amount;
         lastAttacker = player;
-
+        Debug.Log("Last attacker is " + player.name);
         if (Health <= 0 && !isDead)
         {
             Die();
@@ -41,6 +41,7 @@ public class MobHealthMulti : NetworkBehaviour
     void Die()
     {
         isDead = true;
+        Debug.Log("should award score to " + lastAttacker.name);
         AwardScoreTo(lastAttacker); // Only done on server
         AwardHeal(lastAttacker);
         if (IsHost) Destroy(gameObject);
@@ -50,8 +51,6 @@ public class MobHealthMulti : NetworkBehaviour
     // Called by the mob when dying
     public void AwardScoreTo(GameObject killer)
     {
-        if (!IsServer) return;
-
         var scoreComp = killer.GetComponent<PlayerScore>();
         Debug.Log("score is null : " + scoreComp is null);
         if (scoreComp != null)
@@ -63,7 +62,7 @@ public class MobHealthMulti : NetworkBehaviour
 
     public void AwardHeal(GameObject killer)
     {
-        if (!IsServer) return;
+        if (!IsOwner) return;
 
         var playerStat = killer.GetComponent<PlayerStatsMulti>();
         if (playerStat != null)

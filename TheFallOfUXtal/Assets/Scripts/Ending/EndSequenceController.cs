@@ -8,13 +8,12 @@ public class EndSequenceController : MonoBehaviour
     [Header("UI References")]
     [SerializeField] private CanvasGroup fadeCanvasGroup;  // Canvas Group on the Canvas
     [SerializeField] private GameObject fadePanel;          // Black bg
-    [SerializeField] private GameObject completePanel;     // The “Tutorial Completed” panel
+    [SerializeField] private GameObject completePanel;     // The ï¿½Tutorial Completedï¿½ panel
 
     [Header("Fade Settings")]
-    [SerializeField] private float fadeDuration = 1f;      // Time to fade to black
     [SerializeField] private float displayDuration = 5f;   // How long to show the completion panel
 
-    // Call this from your boss’s death logic
+    // Call this from your bossï¿½s death logic
     public void TriggerEndSequence()
     {
         StartCoroutine(EndSequenceRoutine());
