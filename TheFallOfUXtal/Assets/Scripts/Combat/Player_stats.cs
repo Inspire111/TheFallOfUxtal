@@ -1,6 +1,7 @@
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public enum WeaponType
 {
@@ -27,13 +28,13 @@ public class PlayerStats : MonoBehaviour
     [Header("Gold Amount")]
     public int Gold = 0;
 
-    [Header("Energy Regeneration")]
+    [Header("Energy Regen")]
     public float energyRegenRate = 5f;
 
     [Header("Weapons Owned")]
     public bool hasMelee = true;
-    public bool hasSpear = true;
-    public bool hasBow = true;
+    public bool hasSpear = false;
+    public bool hasBow = false;
 
     [Header("Potions")]
     public int HealPotions = 0;
@@ -54,23 +55,32 @@ public class PlayerStats : MonoBehaviour
     public Image spearBackground;
     public Image bowBackground;
 
-    [Header("Potions UI")]
     public Image healPotionImage;
     public Image shieldPotionImage;
+
+    [Header("Respawn")]
+    public Transform respawnPoint;
+
+    [Header("Death Screen")]
+    public GameObject deathScreen;
 
     [HideInInspector] public bool usingHealPotion = true;
 
     private float energyAccumulator = 0f;
+    private bool isDead = false;
 
-    void Start()
+    private void Start()
     {
         currentHealth = maxHealth;
         currentShield = maxShield;
         currentEnergy = maxEnergy;
         UpdateAllStatsText();
+
+        if (deathScreen != null)
+            deathScreen.SetActive(false);
     }
 
-    void Update()
+    private void Update()
     {
         RegenerateEnergy();
     }
@@ -84,10 +94,8 @@ public class PlayerStats : MonoBehaviour
             if (energyAccumulator >= 1f)
             {
                 int energyToAdd = Mathf.FloorToInt(energyAccumulator);
-                currentEnergy += energyToAdd;
-                currentEnergy = Mathf.Clamp(currentEnergy, 0, maxEnergy);
+                currentEnergy = Mathf.Clamp(currentEnergy + energyToAdd, 0, maxEnergy);
                 energyAccumulator -= energyToAdd;
-
                 UpdateAllStatsText();
             }
         }
@@ -105,19 +113,60 @@ public class PlayerStats : MonoBehaviour
         currentHealth -= damage;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
         UpdateAllStatsText();
+
+        if (currentHealth <= 0 && !isDead)
+        {
+            isDead = true;
+            if (deathScreen != null)
+                deathScreen.SetActive(true);
+
+            StartCoroutine(RespawnAfterDelay(3f));
+        }
+    }
+
+    private IEnumerator RespawnAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        Respawn();
+    }
+
+    public void Respawn()
+    {
+        if (respawnPoint != null)
+        {
+            transform.position = respawnPoint.position;
+            Debug.Log("Player respawned at checkpoint.");
+        }
+        else
+        {
+            Debug.LogWarning("No respawn point set for the player!");
+        }
+
+        currentHealth = maxHealth;
+        currentShield = maxShield;
+        currentEnergy = maxEnergy;
+        isDead = false;
+
+        if (deathScreen != null)
+            deathScreen.SetActive(false);
+
+        UpdateAllStatsText();
+    }
+
+    public void SetRespawnPoint(Transform newPoint)
+    {
+        respawnPoint = newPoint;
     }
 
     public void Heal(int amount)
     {
-        currentHealth += amount;
-        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+        currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         UpdateAllStatsText();
     }
 
     public void GainShield(int amount)
     {
-        currentShield += amount;
-        currentShield = Mathf.Clamp(currentShield, 0, maxShield);
+        currentShield = Mathf.Clamp(currentShield + amount, 0, maxShield);
         UpdateAllStatsText();
     }
 
@@ -130,11 +179,11 @@ public class PlayerStats : MonoBehaviour
     public void UpdateAllStatsText()
     {
         if (hpText != null)
-            hpText.text = currentHealth + " / " + maxHealth;
+            hpText.text = $"{currentHealth} / {maxHealth}";
         if (shieldText != null)
-            shieldText.text = currentShield + " / " + maxShield;
+            shieldText.text = $"{currentShield} / {maxShield}";
         if (energyText != null)
-            energyText.text = currentEnergy + " / " + maxEnergy;
+            energyText.text = $"{currentEnergy} / {maxEnergy}";
         if (shieldLeft != null)
             shieldLeft.text = ShieldPotions.ToString();
         if (healLeft != null)
@@ -144,10 +193,8 @@ public class PlayerStats : MonoBehaviour
 
         if (swordBackground != null)
             swordBackground.color = Color.white;
-
         if (spearBackground != null)
             spearBackground.color = hasSpear ? Color.white : Color.red;
-
         if (bowBackground != null)
             bowBackground.color = hasBow ? Color.white : Color.red;
 
@@ -159,27 +206,18 @@ public class PlayerStats : MonoBehaviour
         switch (currentWeapon)
         {
             case WeaponType.Melee:
-                if (swordBackground != null)
-                    swordBackground.color = Color.green;
+                swordBackground.color = Color.green;
                 break;
-
             case WeaponType.Spear:
-                if (spearBackground != null)
-                    spearBackground.color = hasSpear ? Color.green : Color.red;
+                spearBackground.color = hasSpear ? Color.green : Color.red;
                 break;
-
             case WeaponType.Bow:
-                if (bowBackground != null)
-                    bowBackground.color = hasBow ? Color.green : Color.red;
+                bowBackground.color = hasBow ? Color.green : Color.red;
                 break;
-
             case WeaponType.Potions:
-                if (healPotionImage != null)
-                    healPotionImage.gameObject.SetActive(usingHealPotion);
-                if (shieldPotionImage != null)
-                    shieldPotionImage.gameObject.SetActive(!usingHealPotion);
+                healPotionImage?.gameObject.SetActive(usingHealPotion);
+                shieldPotionImage?.gameObject.SetActive(!usingHealPotion);
                 break;
         }
     }
 }
-
