@@ -1,11 +1,15 @@
 using System.Collections.Generic;
 using TMPro;
 using Unity.Netcode;
+using Unity.Services.Matchmaker.Models;
 using UnityEngine;
 
 public class PlayerScore : NetworkBehaviour
 {
-    public TMP_Text scoreText;
+    public TMP_Text scoreTextHost;
+    public int scoreHost;
+    public TMP_Text scoreTextClient;
+    public int scoreClient;
     // Server-controlled, initially only owner can read
 
     public static List<PlayerScore> allPlayers = new List<PlayerScore>();
@@ -18,38 +22,43 @@ public class PlayerScore : NetworkBehaviour
             allPlayers.Remove(this);
         }
     }
-    public NetworkVariable<int> score = new NetworkVariable<int>(
-        0,
-        NetworkVariableReadPermission.Owner,
-        NetworkVariableWritePermission.Server
-    );
+
 
     public void AddScore(int amount)
     {
-        if (IsServer)
+        if (IsHost)
         {
-            score.Value += amount;
-            Debug.Log("score : " + score.Value);
+            scoreHost += amount;
+            allPlayers[1].scoreHost = scoreHost;
+            Debug.Log("score Host : " + scoreHost);
+        }
+        else
+        {
+            scoreClient += amount;
+            allPlayers[0].scoreClient = scoreClient;
+            Debug.Log("score Client : " + scoreClient);
         }
     }
 
+
+    private void Update()
+    {
+        if (allPlayers.Count >= 2)
+        {
+            if (IsHost)
+            {
+                scoreClient = allPlayers[1].scoreClient;
+            }
+            else
+            {
+                scoreHost = allPlayers[0].scoreHost;
+            }
+        }
+        scoreTextHost.text = scoreHost.ToString();
+        scoreTextClient.text = scoreClient.ToString();
+    }
     public override void OnNetworkSpawn()
     {
-        if (IsServer)
-        {
-            allPlayers.Add(this);
-        }
-        if (IsOwner)
-        {
-            score.OnValueChanged += (oldVal, newVal) => UpdateUI(newVal);
-            UpdateUI(score.Value);
-        }
-    }
-
-    private void UpdateUI(int value)
-    {
-        scoreText.text = value.ToString();
-        // Hook this to your HUD
-        Debug.Log($"My Score: {value}");
+        allPlayers.Add(this);
     }
 }

@@ -29,19 +29,19 @@ public class MobManager : NetworkBehaviour
     public SpawnState state = SpawnState.Counting;
     public string targetTag;
 
-    public GameObject HUD;
+    public GameObject EndingPanel;
     public TMPro.TextMeshProUGUI player1Text;
     public TMPro.TextMeshProUGUI player2Text;
 
     public Transform[] SpawnPoints;
-    
+
 
     private void Start()
     {
         if (!IsServer) enabled = false; // Only run on server
 
         waveCountdown = timeBetweenWaves;
-        HUD.SetActive(false);
+        EndingPanel.SetActive(false);
     }
 
     private void Update()
@@ -156,8 +156,8 @@ public class MobManager : NetworkBehaviour
     {
         if (!IsServer) return;
 
-        var score1 = player1.GetComponent<PlayerScore>()?.score.Value ?? 0;
-        var score2 = player2.GetComponent<PlayerScore>()?.score.Value ?? 0;
+        var score1 = player1.GetComponent<PlayerScore>()?.scoreHost ?? 0;
+        var score2 = player2.GetComponent<PlayerScore>()?.scoreClient ?? 0;
 
         ShowFinalScoresClientRpc(score1, score2);
     }
@@ -165,7 +165,7 @@ public class MobManager : NetworkBehaviour
     [ClientRpc]
     private void ShowFinalScoresClientRpc(int score1, int score2)
     {
-        HUD.SetActive(true);
+        EndingPanel.SetActive(true);
         player1Text.text = $"Hote Score: {score1}";
         player2Text.text = $"Client Score: {score2}";
     }

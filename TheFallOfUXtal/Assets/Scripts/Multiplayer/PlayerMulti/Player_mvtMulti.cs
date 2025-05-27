@@ -13,7 +13,6 @@ public class Player_mvtMulti : NetworkBehaviour
     public float dashCooldown = 1f;
 
     private Rigidbody2D rb;
-    private TrailRenderer trail;
     private InputSystem_Actions inputActions;
 
     private Vector3 moveDirection;
@@ -41,19 +40,8 @@ public class Player_mvtMulti : NetworkBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        trail = GetComponent<TrailRenderer>();
         moveDirection = new Vector3(0f, 0f, 0f);
-        trail.enabled = false;
-        if (trail.material == null)
-        {
-            var mat = new Material(Shader.Find("Sprites/Default"));
-            mat.color = Color.white;
-            trail.material = mat;
-        }
-
-        trail.time = 0.3f;
-        trail.startWidth = 0.2f;
-        trail.endWidth = 0.1f;
+        
     }
 
     void Update()
@@ -89,7 +77,6 @@ public class Player_mvtMulti : NetworkBehaviour
             isDashing = true;
             dashTimeRemaining = dashDuration;
             dashCooldownRemaining = dashCooldown;
-            trail.enabled = true;
         }
     }
 
@@ -101,7 +88,6 @@ public class Player_mvtMulti : NetworkBehaviour
             if (dashTimeRemaining <= 0f)
             {
                 isDashing = false;
-                trail.enabled = false;
             }
         }
 
