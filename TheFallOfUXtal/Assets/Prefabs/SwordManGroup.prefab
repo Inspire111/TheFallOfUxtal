@@ -222,14 +222,15 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.4988791, y: 0.8303032}
-      - {x: -0.20830122, y: 0.7797805}
-      - {x: -0.796062, y: 0.42581922}
-      - {x: -1.0026941, y: -0.16182585}
-      - {x: -0.7139573, y: -0.7129717}
-      - {x: 0.17057574, y: -0.8354317}
-      - {x: 0.8913453, y: -0.44575378}
-      - {x: 1.0080652, y: 0.33559912}
+    - - {x: 0.478646, y: 0.50553894}
+      - {x: -0.08048117, y: 0.5178611}
+      - {x: -0.3195911, y: 0.36181596}
+      - {x: -0.5220181, y: 0.11709283}
+      - {x: -0.5664164, y: -0.21768257}
+      - {x: -0.4717188, y: -0.46038002}
+      - {x: 0.19745569, y: -0.62433195}
+      - {x: 0.71782774, y: -0.31139693}
+      - {x: 0.64379066, y: 0.2724982}
   m_UseDelaunayMesh: 0
 --- !u!114 &9136037665152005081
 MonoBehaviour:
@@ -245,8 +246,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetTag: Player
   damageAmount: 10
-  initialDelay: 0.2
-  damageInterval: 0.4
+  initialDelay: 0.4
+  damageInterval: 1
 --- !u!1 &5617163285031752460
 GameObject:
   m_ObjectHideFlags: 0
@@ -460,8 +461,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoneCollider: {fileID: 7485535006740688622}
-  wanderSpeed: 4
-  chaseSpeed: 6
+  wanderSpeed: 3
+  chaseSpeed: 5
   idleTime: 2
 --- !u!114 &6504723706994139995
 MonoBehaviour:
@@ -477,7 +478,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   coinPrefab: {fileID: 3208552910650628664, guid: 23cfa8222443c24439db8c2e8aea0f54, type: 3}
-  coinCount: 4
+  coinCount: 3
   coinExplosionForce: 3
   coinSpreadRadius: 1
 --- !u!114 &7379721503048732278
