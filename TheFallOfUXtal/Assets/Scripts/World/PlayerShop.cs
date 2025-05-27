@@ -46,7 +46,6 @@ public class PlayerShop : MonoBehaviour
 
         shopUI.SetActive(false);
 
-        // Hook up button listeners
         buySpear.onClick.AddListener(BuySpear);
         buyBow.onClick.AddListener(BuyBow);
         buyEnergy.onClick.AddListener(BuyEnergyUpgrade);
@@ -54,7 +53,6 @@ public class PlayerShop : MonoBehaviour
         buyShieldPotion.onClick.AddListener(BuyShieldPotion);
         EXIT.onClick.AddListener(CloseShop);
 
-        // Cache the button backgrounds for color manipulation
         spearImage = buySpear.GetComponent<Image>();
         bowImage = buyBow.GetComponent<Image>();
         energyImage = buyEnergy.GetComponent<Image>();
@@ -68,7 +66,6 @@ public class PlayerShop : MonoBehaviour
         {
             if (inputActions.Player.Interact.WasPressedThisFrame())
             {
-                Debug.Log("Interact input detected while shop is open.");
                 CloseShop();
             }
 
@@ -84,7 +81,6 @@ public class PlayerShop : MonoBehaviour
         shopUI.SetActive(true);
         movement.SetMovementEnabled(false);
 
-        // Set prices with "or"
         spearPrice.text = spearCost + " or";
         bowPrice.text = bowCost + " or";
         energyPrice.text = energyCost + " or";
@@ -96,7 +92,6 @@ public class PlayerShop : MonoBehaviour
 
     public void CloseShop()
     {
-        Debug.Log("Closing shop...");
         shopOpen = false;
         shopUI.SetActive(false);
         movement.SetMovementEnabled(true);
@@ -117,15 +112,11 @@ public class PlayerShop : MonoBehaviour
         button.interactable = interactable;
 
         if (image != null)
-        {
             image.color = interactable ? Color.white : Color.red;
-        }
     }
 
     public bool IsShopOpen() => shopOpen;
     public InputSystem_Actions GetInputActions() => inputActions;
-
-    // ---- Shop Button Methods ----
 
     public void BuySpear()
     {

@@ -7,16 +7,21 @@ public class MobHealth : MonoBehaviour
     private bool isDead = false;
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
+    private AudioSource audioSource;
+
 
     [SerializeField] private GameObject coinPrefab;
     [SerializeField] private int coinCount = 4;
     [SerializeField] private float coinExplosionForce = 5f;
     [SerializeField] private float coinSpreadRadius = 0.6f;
+    [SerializeField] private AudioClip deathClip;
+
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -47,8 +52,15 @@ public class MobHealth : MonoBehaviour
             }
         }
 
+        if (deathClip != null)
+        {
+            AudioSource.PlayClipAtPoint(deathClip, transform.position);
+        }
+
         Destroy(gameObject);
     }
+
+
 
     Vector2 GetRandomIsometricDirection()
     {
