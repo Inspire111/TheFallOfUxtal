@@ -29,7 +29,7 @@ public class MobManager : NetworkBehaviour
     public SpawnState state = SpawnState.Counting;
     public string targetTag;
 
-    public GameObject EndingPanel;
+    public GameObject EndingHUD;
     public TMPro.TextMeshProUGUI player1Text;
     public TMPro.TextMeshProUGUI player2Text;
 
@@ -41,7 +41,7 @@ public class MobManager : NetworkBehaviour
         if (!IsServer) enabled = false; // Only run on server
 
         waveCountdown = timeBetweenWaves;
-        EndingPanel.SetActive(false);
+        EndingHUD.SetActive(false);
     }
 
     private void Update()
@@ -152,6 +152,10 @@ public class MobManager : NetworkBehaviour
         }
     }
 
+    public void Restart()
+    {
+        Debug.Log("Restarting");
+    }
     public void TriggerGameOver(GameObject player1, GameObject player2)
     {
         if (!IsServer) return;
@@ -165,25 +169,18 @@ public class MobManager : NetworkBehaviour
     [ClientRpc]
     private void ShowFinalScoresClientRpc(int score1, int score2)
     {
-        EndingPanel.SetActive(true);
+        EndingHUD.SetActive(true);
         player1Text.text = $"Hote Score: {score1}";
         player2Text.text = $"Client Score: {score2}";
     }
 
-    public void GoToMenu()
+    
+
+    [ClientRpc]
+    private void HideFinalScoresClientRpc()
     {
-        if (NetworkManager.Singleton.IsHost)
-        {
-            NetworkManager.Singleton.Shutdown(); // Stops server and disconnects clients
-            NetworkManager.Singleton.Shutdown(); // End connection
-            SceneManager.LoadScene("Menu");
-        }
-        else if (NetworkManager.Singleton.IsClient)
-        {
-            NetworkManager.Singleton.Shutdown(); // Disconnects from server
-            NetworkManager.Singleton.Shutdown(); // End connection
-            SceneManager.LoadScene("Menu");
-        }
-        
+        EndingHUD.SetActive(false);
+        Debug.Log("Window hided");
+        state = SpawnState.Counting;
     }
 }
