@@ -1,7 +1,9 @@
-L’île d’Uxtal, perdue au milieu de l’océan, a toujours vécu au rythme cyclique des 
-jours et des nuits. D’un côté, les Tonati, artisans des merveilles et vénérateurs de la
-beauté, vivent le jour, et de l’autre, les Metzi, magiciens de l’ombre et maîtres des arcanes, s’éveillent la nuit.
-L’équilibre précieux est brisé le jour où Mitclanta, un Metzi
-jaloux, parvient à s’emparer du soleil. L’île d’Uxtal est alors plongée dans les ténèbres,
-et les Tonati, désemparés et désorganisés, pleurent la perte de leur astre, et personne ne
-semble pouvoir s’opposer à Mitclanta. Personne, vraiment ?
+The island of Uxtal, lost in the middle of the ocean, has always lived to the cyclical rhythm of 
+days and nights. On one side, the Tonati, creators of wonders and worshippers of beauty,
+live during the day, and on the other, the Metzi, magicians of the shadows and masters of the arcane, awaken at night.
+The precious balance is broken when Mitclanta, a jealous Metzi,
+manages to seize the sun. The island of Uxtal is plunged into darkness,
+and the Tonati, distraught and disorganized, mourn the loss of their star, with no one
+seeming able to oppose Mitclanta. No one, really?
+
+The Fall of Uxtal is a free video game created by five EPITA students during their first year of computer science studies.
