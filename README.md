@@ -7,3 +7,4 @@ and the Tonati, distraught and disorganized, mourn the loss of their star, with 
 seeming able to oppose Mitclanta. No one, really?
 
 The Fall of Uxtal is a free video game created by five EPITA students during their first year of computer science studies.
+It is a unity project.
